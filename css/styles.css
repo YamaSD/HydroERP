@@ -40,9 +40,9 @@
   background-color: #EDEDFC;
   color: #4C4DDC;
 
-  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  
   font-size: 12px;
-  font-weight: 700;
+  
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
@@ -62,9 +62,9 @@
 
   color: #343434;
 
-  font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  
   font-size: 42px;
-  font-weight: 700;
+  
   line-height: 1.2;
 }
 
@@ -73,9 +73,9 @@
 
   color: #444444;
 
-  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  
   font-size: 17px;
-  font-weight: 400;
+  
   line-height: 1.625;
 }
 
@@ -122,7 +122,7 @@
 
   overflow: hidden;
 
-  background-color: #EDEDFC;
+  background-color: #FFFFFF;
 }
 
 .platform_modules-image {
@@ -161,9 +161,9 @@
 
   color: #343434;
 
-  font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  
   font-size: 18px;
-  font-weight: 700;
+  
   line-height: 1.4;
 }
 
@@ -172,9 +172,9 @@
 
   color: #575757;
 
-  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  
   font-size: 14px;
-  font-weight: 400;
+  
   line-height: 1.625;
 }
 
@@ -187,9 +187,9 @@
 
   color: #4C4DDC;
 
-  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  
   font-size: 14px;
-  font-weight: 600;
+  
 
   text-decoration: none;
 
@@ -322,9 +322,9 @@
   background-color: #EDEDFC;
   color: #4C4DDC;
 
-  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  
   font-size: 12px;
-  font-weight: 700;
+  
 
   letter-spacing: 0.025em;
   text-transform: uppercase;
@@ -351,9 +351,9 @@
 
   color: #343434;
 
-  font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  
   font-size: 30px;
-  font-weight: 700;
+  
   line-height: 1.25;
 }
 
@@ -372,7 +372,7 @@
 
   color: #444444;
 
-  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  
   font-size: 16px;
   line-height: 1.625;
 }
@@ -447,9 +447,9 @@
   background-color: #EDEDFC;
   color: #4C4DDC;
 
-  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  
   font-size: 12px;
-  font-weight: 700;
+  
 }
 
 
@@ -466,9 +466,9 @@
 .workflow-step-text {
   color: #343434;
 
-  font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  
   font-size: 16px;
-  font-weight: 700;
+  
 
   padding-left:60px;
 }
@@ -542,9 +542,9 @@
 
   color: #343434;
 
-  font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  
   font-size: 16px;
-  font-weight: 700;
+  
   line-height: 1.25;
 }
 
@@ -558,7 +558,7 @@
 
   color: #575757;
 
-  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  
   font-size: 14px;
   line-height: 1.5;
 }
@@ -687,9 +687,9 @@
   background-color: #EDEDFC;
   color: #4C4DDC;
 
-  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  
   font-size: 12px;
-  font-weight: 700;
+  
   letter-spacing: 0.04em;
   line-height: 1.5;
   text-transform: uppercase;
@@ -715,9 +715,9 @@
 
   color: #343434;
 
-  font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  
   font-size: 30px;
-  font-weight: 700;
+  
   line-height: 1.25;
 }
 
@@ -730,7 +730,7 @@
 
   color: #444444;
 
-  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  
   font-size: 16px;
   line-height: 1.625;
 }
@@ -792,7 +792,7 @@
 
   color: #575757;
 
-  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  
   font-size: 15px;
   line-height: 1.625;
 }
@@ -835,9 +835,9 @@
 
   color: #343434;
 
-  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  
   font-size: 14px;
-  font-weight: 600;
+  
   line-height: 1.4;
 }
 
@@ -850,7 +850,7 @@
 
   color: #A1A1A1;
 
-  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  
   font-size: 12px;
   line-height: 1.4;
 }
@@ -971,9 +971,9 @@
   background-color: #EDEDFC;
   color: #4C4DDC;
 
-  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  
   font-size: 12px;
-  font-weight: 700;
+  
   line-height: 1;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -1000,9 +1000,9 @@
 
   color: #343434;
 
-  font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  
   font-size: 30px;
-  font-weight: 700;
+  
   line-height: 1.2;
 }
 
@@ -1075,9 +1075,9 @@
 .faq-question {
   color: #575757;
 
-  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  
   font-size: 15px;
-  font-weight: 600;
+  
   line-height: 1.5;
 }
 
@@ -1130,7 +1130,7 @@
 
   color: #3E4145;
 
-  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  
   font-size: 15px;
   line-height: 1.625;
 }
@@ -1201,9 +1201,9 @@
 
   color: #575757;
 
-  font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  
   font-size: 17px;
-  font-weight: 700;
+  
   line-height: 1.4;
 }
 
@@ -1217,7 +1217,7 @@
 
   color: #404348;
 
-  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  
   font-size: 14px;
   line-height: 1.5;
 }
@@ -1243,9 +1243,9 @@
   background-color: #4C4DDC;
   color: #ffffff;
 
-  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  
   font-size: 14px;
-  font-weight: 600;
+  
 
   text-decoration: none;
 
@@ -1405,9 +1405,9 @@
 .cta-title {
   margin: 0;
 
-  font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  
   font-size: 30px;
-  font-weight: 700;
+  
   line-height: 1.25;
 
   color: #FFFFFF;
@@ -1426,7 +1426,7 @@
 
   margin: 24px auto 0;
 
-  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  
   font-size: 16px;
   line-height: 1.625;
 
@@ -1467,9 +1467,9 @@
 
   border-radius: 8px;
 
-  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  
   font-size: 16px;
-  font-weight: 600;
+  
 
   text-decoration: none;
 
@@ -1488,6 +1488,7 @@
 .cta-button--primary {
   color: #4C4DDC;
   background-color: #FFFFFF;
+  font-size: 16px;
 }
 
 .cta-button--primary:hover {
@@ -1498,10 +1499,10 @@
 
 .cta-button--secondary {
   height: 50px;
-
+  font-size: 16px;
   color: #FFFFFF;
 
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255);
 
   background-color: transparent;
 }
@@ -1519,6 +1520,8 @@
   align-items: center;
   justify-content: center;
 
+  font-size: 12px;
+
   gap: 16px;
 
   margin-top: 40px;
@@ -1532,13 +1535,7 @@
 
   height: 1px;
 
-  background: linear-gradient(
-    to right,
-    transparent,
-    #CBD0E6 45%,
-    #CBD0E6 55%,
-    transparent
-  );
+  background: #D6D6D6;
 
   opacity: 0.3;
 }
@@ -1549,7 +1546,7 @@
 
   gap: 8px;
 
-  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  
   font-size: 14px;
 
   color: #FFFFFF;
@@ -1608,16 +1605,15 @@
 
 .cta-app-button svg {
   flex-shrink: 0;
+  overflow: visible;
 }
 
 .cta-app-button--google {
-  background-color: #FFFFFF;
-  border: 1px solid #9C9C9C;
+  overflow: visible;
 }
 
 .cta-app-button--apple {
-  background-color: #000000;
-  border: 1px solid #A6A6A6;
+  overflow: visible;
 }
 
 .cta-app-text {
@@ -1628,7 +1624,7 @@
 .cta-app-label {
   display: block;
 
-  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  
   font-size: 9px;
 
   letter-spacing: 0.025em;
@@ -1639,9 +1635,9 @@
 
   margin-top: -2px;
 
-  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  
   font-size: 14px;
-  font-weight: 600;
+  
 }
 
 .cta-app-button--google .cta-app-label {
@@ -1677,7 +1673,7 @@
   }
 
   .cta-title {
-    font-size: 38px;
+    font-size: 48px;
     line-height: 1.25;
   }
 
@@ -1686,7 +1682,7 @@
   }
 
   .cta-description {
-    font-size: 17px;
+    font-size: 15.98px;
   }
 
   .cta-actions {
@@ -1695,6 +1691,7 @@
 
   .cta-button {
     width: auto;
+
   }
 
   .cta-fade-line {
@@ -1817,9 +1814,9 @@
 }
 
 .footer-logo-text {
-  font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
-  font-size: 17px;
-  font-weight: 700;
+  
+  font-size: 20px;
+  
 
   color: #0B132A;
 }
@@ -1833,8 +1830,8 @@
 
   margin: 0;
 
-  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
-  font-size: 14px;
+  
+  font-size: 16px;
   line-height: 1.625;
 
   color: #575757;
@@ -1847,9 +1844,9 @@
 .footer-column-title {
   margin: 0 0 16px;
 
-  font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
-  font-size: 16px;
-  font-weight: 600;
+  
+  font-size: 20px;
+  
 
   color: #373A3E;
 }
@@ -1867,8 +1864,8 @@
 }
 
 .footer-links a {
-  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
-  font-size: 13px;
+  
+  font-size: 16px;
 
   color: #45484D;
 
@@ -1878,11 +1875,11 @@
 }
 
 .footer-links a:hover {
-  color: #1E7EBB;
+  color: #12527a;
 }
 
 .footer-links--legal a {
-  color: #1E7EBB90;
+  color: #1E7EBB;
 }
 
 .footer-links--legal a:hover {
@@ -1905,8 +1902,8 @@
 
   border-top: 1px solid #F3F4F6;
 
-  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
-  font-size: 13px;
+  
+  font-size: 16px;
 
   color: #45484D;
 }

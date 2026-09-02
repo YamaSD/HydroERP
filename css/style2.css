@@ -35,6 +35,13 @@
 .fontW500{
     font-weight: 500 !important;
 }
+.albert-sans800 {
+  font-family: "Albert Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
 .albert-sans600 {
   font-family: "Albert Sans", sans-serif;
   font-optical-sizing: auto;
@@ -45,6 +52,12 @@
   font-family: "Albert Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
+  font-style: normal;
+}
+.albert-sans400 {
+  font-family: "Albert Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
   font-style: normal;
 }
 

@@ -11,7 +11,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
 
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/style2.css">
 
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
@@ -197,14 +200,14 @@
       <img src="assets/connector-left.svg" alt="" class="hidden xl:block absolute w-[64px] h-auto pointer-events-none select-none z-30" style="left: -7.34%; top: -2.07%;" aria-hidden="true">
       <img src="assets/connector-right.svg" alt="" class="hidden xl:block absolute w-[110px] h-auto pointer-events-none select-none z-30" style="left: 106.26%; top: -1.5%;" aria-hidden="true">
 
-      <div class="relative w-full" style="aspect-ratio: 926 / 434;">
+      <div class="relative heroImg_boxShadow1 w-full rounded rounded-[28px]" style="aspect-ratio: 926 / 434;">
         <!-- stacked-card back layer (3rd/outermost sheet) -->
-        <div class="absolute inset-0 rounded-2xl bg-white shadow-xl shadow-primary/10 ring-1 ring-black/5"></div>
+        <div class="absolute inset-0 rounded rounded-[28px] shadow-xl bg-[transparent] shadow-primary/10 ring-1 ring-black/5 heroImageBrder heroImg_boxShadow2"></div>
         <!-- stacked-card middle layer (2nd sheet) -->
-        <div class="absolute rounded-2xl bg-[#FAFBFF] shadow-md ring-1 ring-black/5" style="left:3.2%; top:6.9%; width:93.6%; height:93%;"></div>
+        <div class="absolute bg-[transparent] rounded-2xl heroImageBrder shadow-md ring-1 ring-black/5" style="left:3.2%; top:6.9%; width:93.6%; height:93%;"></div>
         <!-- front layer: actual dashboard screenshot (1st/top sheet) -->
         <div class="absolute rounded-2xl overflow-hidden ring-1 ring-black/10 shadow-xl bg-white" style="left:6.5%; top:15.4%; width:87%; height:79.3%;">
-          <img src="assets/dashboard-web.png" alt="HydroERP operations dashboard" class="w-full h-full object-cover object-top">
+          <img src="assets/dashboard-web.png" alt="HydroERP operations dashboard" class="w-full h-full object-cover object-top bg-white px-[7px] py-[8px]">
         </div>
         <!-- phone mockup, overlapping the dashboard -->
         <div class="absolute rounded-[1.4rem] overflow-hidden ring-4 sm:ring-8 ring-gray-900 shadow-2xl bg-gray-900 z-20" style="left:84%; top:1.6%; width:22%; height:96.8%;">
@@ -214,8 +217,8 @@
 
       <!-- connector from phone to the Quick DPR Entry card, precisely anchored between the two -->
       <span class="hidden md:block absolute pointer-events-none select-none z-30 border-l-[1.5px] border-dashed" style="left: 97%; top: 98.6%; height: 4.6%; border-color: #A5A6F0;" aria-hidden="true"></span>
-      <span class="hidden md:block absolute w-[7px] h-[7px] rounded-full bg-primary pointer-events-none select-none z-30" style="left: calc(97% - 3.5px); top: calc(98.6% - 3.5px);" aria-hidden="true"></span>
-      <img src="assets/card-quick-dpr.svg" alt="Quick DPR Entry — Capture daily progress in 2 mins" class="hidden md:block absolute w-[220px] h-auto pointer-events-none select-none z-30" style="left: calc(91.47% - 24px); top: calc(103.23% - 16px);">
+       <img src="assets/rightBottomLine.png" alt="" class="hidden xl:block absolute w-[110px] h-[231px] pointer-events-none select-none z-30" style="left: 106.26%; bottom: -11.5%;" aria-hidden="true">
+      <img src="assets/card-quick-dpr.svg" alt="Quick DPR Entry — Capture daily progress in 2 mins" class="hidden md:block absolute w-[220px] h-[auto] pointer-events-none select-none z-30" style="left: calc(91.47% - 2px); top: calc(103.23% - 16px);">
     </div>
   </div>
 </section>
@@ -224,11 +227,11 @@
 <section class="bg-white py-16 sm:py-20">
   <div class="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-[79px]">
     <div class="flex items-center justify-center gap-4 sm:gap-6 mb-12">
-      <span class="fade-line flex-1 max-w-[40px] sm:max-w-[220px] shrink-0"></span>
+      <span class="fade-line flex-1 max-w-[40px] sm:max-w-[220px] shrink-0 heroLeftLine"></span>
       <h3 class="text-center text-[11px] sm:text-[13px] font-bold tracking-wider text-[#444444] uppercase">
         Trusted by top construction companies across Nepal
       </h3>
-      <span class="fade-line flex-1 max-w-[40px] sm:max-w-[220px] shrink-0"></span>
+      <span class="fade-line flex-1 max-w-[40px] sm:max-w-[220px] shrink-0 heroRightLine"></span>
     </div>
 
     <div class="flex flex-wrap items-center justify-center gap-x-10 gap-y-6">
@@ -255,13 +258,13 @@
 <section class="section-tint py-20 sm:py-28">
   <div class="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-[79px]">
     <div class="text-center max-w-[720px] mx-auto mb-16">
-      <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#EDEDFC] text-primary text-[12px] font-bold tracking-wide uppercase">
-        <span class="w-3.5 h-3.5 rounded-full bg-primary"></span> One Connected Platform
+      <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#EDEDFC] text-primary text-[12px]  uppercase">
+        <span class="w-3.5 h-3.5 rounded-full bg-primary leading-[2px] albert-sans600"></span> One Connected Platform
       </span>
-      <h2 class="font-display font-bold text-[30px] sm:text-[38px] lg:text-[44px] text-[#343434] mt-6 leading-[1.15]">
+      <h2 class="albert-sans600 text-[30px] sm:text-[38px] lg:text-[44px] text-[#343434] mt-6 leading-[1.15]">
         Your Projects. Your People.<br class="hidden sm:block"> Your Operations. One System.
       </h2>
-      <p class="mt-5 text-[#444444] text-[16px] sm:text-[17px] leading-relaxed">
+      <p class="mt-5  text-[16px] sm:text-[17px] barlow-medium paraColor">
         Construction involves hundreds of moving parts — daily progress, manpower, materials, equipment, approvals, plant operations and site documentation. HydroERP connects these activities into one structured system
       </p>
     </div>
@@ -274,44 +277,44 @@
       <div class="max-w-lg w-full mx-auto">
         <ol class="relative border-l-2 border-dashed border-primary/25 pl-8 space-y-9">
           <li class="relative">
-            <span class="absolute -left-[41px] top-[9px] w-8 h-8">
+            <span class="absolute -left-[49px] top-[9px] w-8 h-8">
               <img src="assets/icon-check-circle-step.svg" alt="" class="w-full h-full" aria-hidden="true">
             </span>
             <p class="text-primary font-bold text-[13px]">1.</p>
-            <h4 class="font-display font-bold text-[20px] text-[#343434]">Plan</h4>
-            <p class="text-[#444444] mt-1">Organize projects, sites and operational data.</p>
+            <h4 class="font-display  fontW500 text-[20px] text-[#444444]">Plan</h4>
+            <p class="text-[#444444] mt-1 barlow-medium">Organize projects, sites and operational data.</p>
           </li>
           <li class="relative">
-            <span class="absolute -left-[41px] top-[9px] w-8 h-8">
+            <span class="absolute -left-[49px] top-[9px] w-8 h-8">
               <img src="assets/icon-check-circle-step.svg" alt="" class="w-full h-full" aria-hidden="true">
             </span>
             <p class="text-primary font-bold text-[13px]">2</p>
-            <h4 class="font-display font-bold text-[20px] text-[#343434]">Execute</h4>
-            <p class="text-[#444444] mt-1">Capture work and resources from the field.</p>
+            <h4 class="font-display  fontW500 text-[20px] text-[#444444]">Execute</h4>
+            <p class="text-[#444444] mt-1 barlow-medium">Capture work and resources from the field.</p>
           </li>
           <li class="relative">
-            <span class="absolute -left-[41px] top-[9px] w-8 h-8">
+            <span class="absolute -left-[49px] top-[9px] w-8 h-8">
               <img src="assets/icon-check-circle-step.svg" alt="" class="w-full h-full" aria-hidden="true">
             </span>
             <p class="text-primary font-bold text-[13px]">3</p>
-            <h4 class="font-display font-bold text-[20px] text-[#343434]">Control</h4>
-            <p class="text-[#444444] mt-1">Manage materials, equipment and approvals.</p>
+            <h4 class="font-display  fontW500 text-[20px] text-[#444444]">Control</h4>
+            <p class="text-[#444444] mt-1 barlow-medium">Manage materials, equipment and approvals.</p>
           </li>
           <li class="relative">
-            <span class="absolute -left-[41px] top-[9px] w-8 h-8">
+            <span class="absolute -left-[49px] top-[9px] w-8 h-8">
               <img src="assets/icon-check-circle-step.svg" alt="" class="w-full h-full" aria-hidden="true">
             </span>
             <p class="text-primary font-bold text-[13px]">4</p>
-            <h4 class="font-display font-bold text-[20px] text-[#343434]">Monitor</h4>
-            <p class="text-[#444444] mt-1">See what's happening across your projects.</p>
+            <h4 class="font-display  fontW500 text-[20px] text-[#444444]">Monitor</h4>
+            <p class="text-[#444444] mt-1 barlow-medium">See what's happening across your projects.</p>
           </li>
           <li class="relative">
-            <span class="absolute -left-[41px] top-[9px] w-8 h-8">
+            <span class="absolute -left-[49px] top-[9px] w-8 h-8">
               <img src="assets/icon-check-circle-step.svg" alt="" class="w-full h-full" aria-hidden="true">
             </span>
             <p class="text-primary font-bold text-[13px]">5</p>
-            <h4 class="font-display font-bold text-[20px] text-[#343434]">Decide</h4>
-            <p class="text-[#444444] mt-1">Turn operational information into faster decisions.</p>
+            <h4 class="font-display  fontW500 text-[20px] text-[#444444]">Decide</h4>
+            <p class="text-[#444444] mt-1 barlow-medium">Turn operational information into faster decisions.</p>
           </li>
         </ol>
       </div>
@@ -323,13 +326,13 @@
 <section class="section-tint pb-20 sm:pb-28">
   <div class="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-[79px]">
     <div class="text-center max-w-[640px] mx-auto mb-10">
-      <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#EDEDFC] text-primary text-[12px] font-bold tracking-wide uppercase">
-        <span class="w-3.5 h-3.5 rounded-full bg-primary"></span> Take Our Product Tour
+      <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#EDEDFC] text-primary text-[12px] uppercase">
+        <span class="w-3.5 h-3.5 rounded-full bg-primary leading-[2px] albert-sans600"></span> Take Our Product Tour
       </span>
-      <h2 class="font-display font-bold text-[30px] sm:text-[38px] lg:text-[42px] text-[#343434] mt-6 leading-tight">
+      <h2 class="albert-sans600 text-[30px] sm:text-[38px] lg:text-[42px] text-[#343434] mt-6 leading-tight">
         One Product. Two Powerful Experiences.
       </h2>
-      <p class="mt-5 text-[#444444] text-[16px] sm:text-[17px] leading-relaxed">
+      <p class="mt-5 text-[#444444] barlow-medium text-[16px] sm:text-[17px] leading-relaxed">
         Different teams work differently. HydroERP gives each team the right interface for the job while keeping everyone connected.
       </p>
     </div>
@@ -340,19 +343,19 @@
     </div>
 
     <!-- WEB VIEW SLIDER -->
-    <div class="tour-panel relative max-w-[1200px] mx-auto" data-tour-panel="web">
-      <button aria-label="previous" class="tour-prev hidden sm:flex absolute left-0 sm:-left-6 top-[43%] -translate-y-1/2 z-10 w-[39px] h-[39px] rounded-full bg-white shadow-md items-center justify-center text-[#4C4DDC] hover:bg-gray-50">
+    <div class="tour-panel relative max-w-[1200px] ProductSwipperParent mx-auto" data-tour-panel="web">
+      <button aria-label="previous" class="tour-prev hidden sm:flex absolute left-0 sm:left-[0.7rem] top-[43%] -translate-y-1/2 z-10 w-[39px] h-[39px] rounded-full bg-white shadow-md items-center justify-center text-[#4C4DDC] hover:bg-gray-50">
         <svg width="8" height="13" viewBox="106 3476 8 14"><path d="M108.828 3483L113.778 3487.95L112.364 3489.36L106 3483L112.364 3476.64L113.778 3478.05L108.828 3483Z" fill="#4C4DDC"/></svg>
       </button>
-      <button aria-label="next" class="tour-next hidden sm:flex absolute right-0 sm:-right-6 top-[43%] -translate-y-1/2 z-10 w-[39px] h-[39px] rounded-full bg-white shadow-md items-center justify-center text-[#4C4DDC] hover:bg-gray-50">
+      <button aria-label="next" class="tour-next hidden sm:flex absolute right-0 sm:right-[0.7rem] top-[43%] -translate-y-1/2 z-10 w-[39px] h-[39px] rounded-full bg-white shadow-md items-center justify-center text-[#4C4DDC] hover:bg-gray-50">
         <svg width="8" height="13" viewBox="1300 3476 8 14"><path d="M1305.17 3483L1300.22 3487.95L1301.64 3489.36L1308 3483L1301.64 3476.64L1300.22 3478.05L1305.17 3483Z" fill="#4C4DDC"/></svg>
       </button>
 
-      <div class="bg-gradient-to-b from-[#4C4DDC]/[0.06] to-white rounded-[2rem] p-4 sm:p-10 border border-gray-100 shadow-sm">
-        <div class="swiper tour-swiper rounded-2xl overflow-hidden shadow-xl ring-1 ring-black/5">
-          <div class="swiper-wrapper">
+      <div class="">
+        <div class="swiper tour-swiper rounded-2xl overflow-hidden">
+          <div class="swiper-wrapper  max-h-[500px]">
             <div class="swiper-slide" data-title="1. Dashboard" data-desc="Get a real-time overview of site weather, incidents, inspections and approvals — everything your team needs at a glance.">
-              <img src="assets/dashboard-web.png" alt="HydroERP operations dashboard" class="w-full h-auto block">
+              <img src="assets/dashboard-web2.png" alt="HydroERP operations dashboard" class="w-full h-auto block">
             </div>
             <div class="swiper-slide" data-title="2. Project Operations" data-desc="Keep project activities organized and visible. Manage projects, sites, activities and operational information from a centralized platform.">
               <img src="assets/card-project-ops.png" alt="Project Operations" class="w-full h-auto block">
@@ -370,8 +373,8 @@
       <div class="tour-pagination flex items-center justify-center gap-2 mt-6"></div>
 
       <div class="text-center mt-6">
-        <h3 class="tour-caption-title font-display font-bold text-[19px] text-[#343434]">1. Dashboard</h3>
-        <p class="tour-caption-desc text-[#444444] mt-2 max-w-xl mx-auto">Get a real-time overview of site weather, incidents, inspections and approvals — everything your team needs at a glance.</p>
+        <h3 class="tour-caption-title text-[19px] albert-sans600 text-[#343434]">1. Dashboard</h3>
+        <p class="tour-caption-desc barlow-medium text-[#444444] mt-2 max-w-xl mx-auto">Get a real-time overview of site weather, incidents, inspections and approvals — everything your team needs at a glance.</p>
       </div>
     </div>
 
@@ -400,8 +403,8 @@
       <div class="tour-pagination flex items-center justify-center gap-2 mt-6"></div>
 
       <div class="text-center mt-6">
-        <h3 class="tour-caption-title font-display font-bold text-[19px] text-[#343434]">1. Mobile Dashboard</h3>
-        <p class="tour-caption-desc text-[#444444] mt-2 max-w-xl mx-auto">Field teams get quick actions, today's DPR entries, tasks and approval requests — all built mobile-first for the site.</p>
+        <h3 class="tour-caption-title albert-sans600 text-[19px] text-[#343434]">1. Mobile Dashboard</h3>
+        <p class="tour-caption-desc barlow-medium text-[#444444] mt-2 max-w-xl mx-auto">Field teams get quick actions, today's DPR entries, tasks and approval requests — all built mobile-first for the site.</p>
       </div>
     </div>
   </div>
@@ -428,8 +431,8 @@
           <img src="assets/card-project-ops.png" alt="Project Operations" class="w-full h-full object-cover">
         </div>
         <div class="p-6">
-          <h4 class="font-display font-bold text-[18px] text-[#343434]">Project Operations</h4>
-          <p class="text-[#575757] text-[14px] mt-2 leading-relaxed">Keep project activities organized and visible. Manage projects, sites, activities and operational information from a centralized platform.</p>
+          <h4 class="albert-sans600 text-[18px] text-[#343434]">Project Operations</h4>
+          <p class="text-[#444444] barlow-medium text-[14px] mt-2 leading-relaxed">Keep project activities organized and visible. Manage projects, sites, activities and operational information from a centralized platform.</p>
           <a href="#" class="inline-flex items-center gap-1.5 text-primary font-semibold text-[14px] mt-4">Explore Module <svg width="6" height="10" viewBox="0 0 6 10"><path d="M1 1l4 4-4 4" fill="none" stroke="#4C4DDC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         </div>
       </div>
@@ -438,8 +441,8 @@
           <img src="assets/card-dpr.png" alt="DPR" class="w-full h-full object-cover">
         </div>
         <div class="p-6">
-          <h4 class="font-display font-bold text-[18px] text-[#343434]">DPR</h4>
-          <p class="text-[#575757] text-[14px] mt-2 leading-relaxed">Capture what actually happened on site. Record activities, weather, manpower, equipment, materials and visual evidence.</p>
+          <h4 class="albert-sans600 text-[18px] text-[#343434]">DPR</h4>
+          <p class="text-[#444444] barlow-medium text-[14px] mt-2 leading-relaxed">Capture what actually happened on site. Record activities, weather, manpower, equipment, materials and visual evidence.</p>
           <a href="#" class="inline-flex items-center gap-1.5 text-primary font-semibold text-[14px] mt-4">Explore Module <svg width="6" height="10" viewBox="0 0 6 10"><path d="M1 1l4 4-4 4" fill="none" stroke="#4C4DDC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         </div>
       </div>
@@ -448,8 +451,8 @@
           <img src="assets/card-approvals.png" alt="Approvals & Workflows" class="h-full w-auto object-contain">
         </div>
         <div class="p-6">
-          <h4 class="font-display font-bold text-[18px] text-[#343434]">Approvals &amp; Workflows</h4>
-          <p class="text-[#575757] text-[14px] mt-2 leading-relaxed">Review DPRs, material requests, and operational tasks in one approval workspace and take action without unnecessary delays.</p>
+          <h4 class="albert-sans600 text-[18px] text-[#343434]">Approvals &amp; Workflows</h4>
+          <p class="text-[#444444]  barlow-medium text-[14px] mt-2 leading-relaxed">Review DPRs, material requests, and operational tasks in one approval workspace and take action without unnecessary delays.</p>
           <a href="#" class="inline-flex items-center gap-1.5 text-primary font-semibold text-[14px] mt-4">Explore Module <svg width="6" height="10" viewBox="0 0 6 10"><path d="M1 1l4 4-4 4" fill="none" stroke="#4C4DDC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         </div>
       </div>
@@ -458,8 +461,8 @@
           <img src="assets/card-dpr.png" alt="Inventory" class="w-full h-full object-cover">
         </div>
         <div class="p-6">
-          <h4 class="font-display font-bold text-[18px] text-[#343434]">Inventory</h4>
-          <p class="text-[#575757] text-[14px] mt-2 leading-relaxed">Know what you have and where it is. Manage stock visibility, material requisitions, material issues, receipts and physical verification.</p>
+          <h4 class="albert-sans600 text-[18px] text-[#343434]">Inventory</h4>
+          <p class="text-[#444444]  barlow-medium text-[14px] mt-2 leading-relaxed">Know what you have and where it is. Manage stock visibility, material requisitions, material issues, receipts and physical verification.</p>
           <a href="#" class="inline-flex items-center gap-1.5 text-primary font-semibold text-[14px] mt-4">Explore Module <svg width="6" height="10" viewBox="0 0 6 10"><path d="M1 1l4 4-4 4" fill="none" stroke="#4C4DDC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         </div>
       </div>
@@ -468,8 +471,8 @@
           <img src="assets/card-dpr.png" alt="Reports & Insights" class="w-full h-full object-cover">
         </div>
         <div class="p-6">
-          <h4 class="font-display font-bold text-[18px] text-[#343434]">Reports &amp; Insights</h4>
-          <p class="text-[#575757] text-[14px] mt-2 leading-relaxed">Turn operational data into visibility. Give project teams the information they need to understand current operations and identify what needs attention.</p>
+          <h4 class="albert-sans600 text-[18px] text-[#343434]">Reports &amp; Insights</h4>
+          <p class="text-[#444444] barlow-medium  text-[14px] mt-2 leading-relaxed">Turn operational data into visibility. Give project teams the information they need to understand current operations and identify what needs attention.</p>
           <a href="#" class="inline-flex items-center gap-1.5 text-primary font-semibold text-[14px] mt-4">Explore Module <svg width="6" height="10" viewBox="0 0 6 10"><path d="M1 1l4 4-4 4" fill="none" stroke="#4C4DDC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         </div>
       </div>
@@ -478,7 +481,7 @@
           <img src="assets/card-tools-custody.png" alt="Tools & Custody" class="w-full h-full object-cover">
         </div>
         <div class="p-6">
-          <h4 class="font-display font-bold text-[18px] text-[#343434]">Tools &amp; Custody</h4>
+          <h4 class="albert-sans600 text-[18px] text-[#343434]">Tools &amp; Custody</h4>
           <p class="text-[#575757] text-[14px] mt-2 leading-relaxed">Know who has what. Manage tool issue and return records and maintain clear custody information across your sites.</p>
           <a href="#" class="inline-flex items-center gap-1.5 text-primary font-semibold text-[14px] mt-4">Explore Module <svg width="6" height="10" viewBox="0 0 6 10"><path d="M1 1l4 4-4 4" fill="none" stroke="#4C4DDC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         </div>

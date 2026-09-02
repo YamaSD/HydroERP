@@ -1,0 +1,192 @@
+/* HERO  */
+.heroImg_boxShadow1{
+        box-shadow: 0px 4px 32.3px 21px #00000014;
+}
+.heroImg_boxShadow2{
+        box-shadow: 0px 4px 32.3px 21px #00000014;
+}
+.heroImageBrder{
+            border: 3px solid white;
+}
+.heroRightLine{
+    background: linear-gradient(to right, #7B7B7B, #E1E1E100) !important;
+    width: 351px !important;
+    height: 1px !important;
+}
+.heroLeftLine{
+    background: linear-gradient(to right, #E1E1E100 ,#7B7B7B) !important;
+    width: 351px !important;
+    height: 1px !important;
+}
+/* HERO END  */
+
+
+/* COLORS  */
+.paraColor{
+    color: #444444;
+}
+.bigHeadingColor{
+    color:#343434;
+}
+/* COLORS END */
+
+
+/* FONTS  */
+.fontW500{
+    font-weight: 500 !important;
+}
+.albert-sans600 {
+  font-family: "Albert Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.albert-sans500 {
+  font-family: "Albert Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.barlow-thin {
+  font-family: "Barlow", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.barlow-extralight {
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.barlow-light {
+  font-family: "Barlow", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.barlow-regular {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.barlow-medium {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+img {
+    user-select: none !important;
+    -webkit-user-select: none !important;
+    -webkit-user-drag: none !important;
+    user-drag: none !important;
+}
+.barlow-semibold {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.barlow-bold {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.barlow-extrabold {
+  font-family: "Barlow", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.barlow-black {
+  font-family: "Barlow", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.barlow-thin-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.barlow-extralight-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.barlow-light-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.barlow-regular-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.barlow-medium-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.barlow-semibold-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.barlow-bold-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.barlow-extrabold-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.barlow-black-italic {
+  font-family: "Barlow", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* FONTS END  */
+/* PRODUCT TOUR  */
+.tour-swiper {
+    height: auto !important;
+}
+
+.tour-swiper .swiper-wrapper {
+    height: auto !important;
+}
+
+.tour-swiper .swiper-slide {
+    height: auto !important;
+}
+
+.tour-swiper .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.ProductSwipperParent{
+        background: radial-gradient(66.55% 154.74% at 49.1% 39.99%, #FFFFFF 0%, rgba(209, 225, 255, 0.78) 100%) !important;
+    padding: 21px;
+    border-radius: 30px;
+}
+.ProductSwipperParent img{
+    max-width: 1046px !important;
+    border-radius: 14px;
+}
+/* PRODUCT TOUR END  */

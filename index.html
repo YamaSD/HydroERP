@@ -39,21 +39,21 @@
   h1, h2, h3, h4, .font-display { font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif; }
   .icon { display: inline-block; vertical-align: middle; }
 
-  .grid-pattern-dark {
+  /* .grid-pattern-dark {
     background-image:
       linear-gradient(to right, rgba(255,255,255,0.06) 1px, transparent 1px),
       linear-gradient(to bottom, rgba(255,255,255,0.06) 1px, transparent 1px);
     background-size: 80.7px 80.7px;
-  }
+  } */
   .section-tint { background: #F4F8FF; }
-  .cta-bg { background-color: #2A2A79; }
-  .footer-bg { background: radial-gradient(120% 140% at 50% 0%, #dbe6ff 0%, #f4f8ff 60%, #ffffff 100%); }
+  /* .cta-bg { background-color: #2A2A79; } */
+  /* .footer-bg { background: radial-gradient(120% 140% at 50% 0%, #dbe6ff 0%, #f4f8ff 60%, #ffffff 100%); } */
   .fade-line { background: linear-gradient(to right, transparent, #cbd0e6 45%, #cbd0e6 55%, transparent); height: 1px; }
 
-  details > summary { list-style: none; cursor: pointer; }
-  details > summary::-webkit-details-marker { display: none; }
-  details[open] .accordion-icon-plus { display: none; }
-  details:not([open]) .accordion-icon-minus { display: none; }
+  /* details > summary { list-style: none; cursor: pointer; }
+  details > summary::-webkit-details-marker { display: none; } */
+  /* details[open] .accordion-icon-plus { display: none; }
+  details:not([open]) .accordion-icon-minus { display: none; } */
 
   .tour-tab-btn.active { background: #EDEDFC; color: #4C4DDC; border-color: #C7C8F5; }
   .tour-tab-btn:not(.active) { color: #575757; border-color: #D6D6D6; background: white; }
@@ -361,7 +361,7 @@
               <img src="assets/card-project-ops.png" alt="Project Operations" class="w-full h-auto block">
             </div>
             <div class="swiper-slide" data-title="3. DPR" data-desc="Capture what actually happened on site. Record activities, weather, manpower, equipment, materials and visual evidence.">
-              <img src="assets/card-dpr.png" alt="DPR" class="w-full h-auto block">
+              <img src="assets/cards-inventoryAndReportImage.svg" alt="DPR" class="w-full h-auto block">
             </div>
             <div class="swiper-slide" data-title="4. Approvals & Workflows" data-desc="Review DPRs, material requests, and operational tasks in one approval workspace and take action without unnecessary delays.">
               <img src="assets/card-approvals.png" alt="Approvals & Workflows" class="w-full h-auto block">
@@ -410,362 +410,990 @@
   </div>
 </section>
 
-<!-- ============ EVERYTHING CONNECTED (module cards) — bg #F4F8FF, cards 386x441, gap ~61px ============ -->
-<section id="modules" class="section-tint py-20 sm:py-28">
-  <div class="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-[79px]">
-    <div class="text-center max-w-[640px] mx-auto mb-16">
-      <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#EDEDFC] text-primary text-[12px] font-bold tracking-wide uppercase">
-        <span class="w-3.5 h-3.5 rounded-full bg-primary"></span> Everything Connected
+<!-- ============ PLATFORM MODULES ============ -->
+<section id="modules" class="platform_modules-section">
+  <div class="platform_modules-container">
+
+    <div class="platform_modules-header">
+      <span class="platform_modules-badge">
+        <span class="platform_modules-badge-dot"></span>
+        Everything Connected
       </span>
-      <h2 class="font-display font-bold text-[30px] sm:text-[38px] lg:text-[42px] text-[#343434] mt-6 leading-tight">
-        One Platform for the Entire<br class="hidden sm:block"> Construction Operation.
+
+      <h2 class="platform_modules-title">
+        One Platform for the Entire<br class="platform_modules-title-break">
+        Construction Operation.
       </h2>
-      <p class="mt-5 text-[#444444] text-[16px] sm:text-[17px] leading-relaxed">
-        HydroERP brings critical construction workflows into a unified product, helping teams manage information from the office, the site, the store and the plant.
+
+      <p class="platform_modules-description">
+        HydroERP brings critical construction workflows into a unified product,
+        helping teams manage information from the office, the site, the store
+        and the plant.
       </p>
     </div>
 
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-[30px] gap-y-[22px]">
-      <div class="bg-white border border-[#ECECEC] rounded-2xl overflow-hidden hover:shadow-lg transition">
-        <div class="bg-[#EDEDFC] flex items-center justify-center h-[189px] overflow-hidden">
-          <img src="assets/card-project-ops.png" alt="Project Operations" class="w-full h-full object-cover">
+    <div class="platform_modules-grid">
+
+      <!-- Project Operations -->
+      <div class="platform_modules-card">
+        <div class="platform_modules-image-wrapper">
+          <img
+            src="assets/card-project-ops.png"
+            alt="Project Operations"
+            class="platform_modules-image"
+          >
         </div>
-        <div class="p-6">
-          <h4 class="albert-sans600 text-[18px] text-[#343434]">Project Operations</h4>
-          <p class="text-[#444444] barlow-medium text-[14px] mt-2 leading-relaxed">Keep project activities organized and visible. Manage projects, sites, activities and operational information from a centralized platform.</p>
-          <a href="#" class="inline-flex items-center gap-1.5 text-primary font-semibold text-[14px] mt-4">Explore Module <svg width="6" height="10" viewBox="0 0 6 10"><path d="M1 1l4 4-4 4" fill="none" stroke="#4C4DDC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        </div>
-      </div>
-      <div class="bg-white border border-[#ECECEC] rounded-2xl overflow-hidden hover:shadow-lg transition">
-        <div class="bg-[#EDEDFC] flex items-center justify-center h-[189px] overflow-hidden">
-          <img src="assets/card-dpr.png" alt="DPR" class="w-full h-full object-cover">
-        </div>
-        <div class="p-6">
-          <h4 class="albert-sans600 text-[18px] text-[#343434]">DPR</h4>
-          <p class="text-[#444444] barlow-medium text-[14px] mt-2 leading-relaxed">Capture what actually happened on site. Record activities, weather, manpower, equipment, materials and visual evidence.</p>
-          <a href="#" class="inline-flex items-center gap-1.5 text-primary font-semibold text-[14px] mt-4">Explore Module <svg width="6" height="10" viewBox="0 0 6 10"><path d="M1 1l4 4-4 4" fill="none" stroke="#4C4DDC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        </div>
-      </div>
-      <div class="bg-white border border-[#ECECEC] rounded-2xl overflow-hidden hover:shadow-lg transition">
-        <div class="bg-[#EDEDFC] flex items-center justify-center h-[189px] overflow-hidden">
-          <img src="assets/card-approvals.png" alt="Approvals & Workflows" class="h-full w-auto object-contain">
-        </div>
-        <div class="p-6">
-          <h4 class="albert-sans600 text-[18px] text-[#343434]">Approvals &amp; Workflows</h4>
-          <p class="text-[#444444]  barlow-medium text-[14px] mt-2 leading-relaxed">Review DPRs, material requests, and operational tasks in one approval workspace and take action without unnecessary delays.</p>
-          <a href="#" class="inline-flex items-center gap-1.5 text-primary font-semibold text-[14px] mt-4">Explore Module <svg width="6" height="10" viewBox="0 0 6 10"><path d="M1 1l4 4-4 4" fill="none" stroke="#4C4DDC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        </div>
-      </div>
-      <div class="bg-white border border-[#ECECEC] rounded-2xl overflow-hidden hover:shadow-lg transition">
-        <div class="bg-[#EDEDFC] flex items-center justify-center h-[189px] overflow-hidden">
-          <img src="assets/card-dpr.png" alt="Inventory" class="w-full h-full object-cover">
-        </div>
-        <div class="p-6">
-          <h4 class="albert-sans600 text-[18px] text-[#343434]">Inventory</h4>
-          <p class="text-[#444444]  barlow-medium text-[14px] mt-2 leading-relaxed">Know what you have and where it is. Manage stock visibility, material requisitions, material issues, receipts and physical verification.</p>
-          <a href="#" class="inline-flex items-center gap-1.5 text-primary font-semibold text-[14px] mt-4">Explore Module <svg width="6" height="10" viewBox="0 0 6 10"><path d="M1 1l4 4-4 4" fill="none" stroke="#4C4DDC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        </div>
-      </div>
-      <div class="bg-white border border-[#ECECEC] rounded-2xl overflow-hidden hover:shadow-lg transition">
-        <div class="bg-[#EDEDFC] flex items-center justify-center h-[189px] overflow-hidden">
-          <img src="assets/card-dpr.png" alt="Reports & Insights" class="w-full h-full object-cover">
-        </div>
-        <div class="p-6">
-          <h4 class="albert-sans600 text-[18px] text-[#343434]">Reports &amp; Insights</h4>
-          <p class="text-[#444444] barlow-medium  text-[14px] mt-2 leading-relaxed">Turn operational data into visibility. Give project teams the information they need to understand current operations and identify what needs attention.</p>
-          <a href="#" class="inline-flex items-center gap-1.5 text-primary font-semibold text-[14px] mt-4">Explore Module <svg width="6" height="10" viewBox="0 0 6 10"><path d="M1 1l4 4-4 4" fill="none" stroke="#4C4DDC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+
+        <div class="platform_modules-card-content">
+          <h4 class="platform_modules-card-title">
+            Project Operations
+          </h4>
+
+          <p class="platform_modules-card-description">
+            Keep project activities organized and visible. Manage projects,
+            sites, activities and operational information from a centralized
+            platform.
+          </p>
+
+          <a href="#" class="platform_modules-link">
+            Explore Module
+            <svg
+              width="6"
+              height="10"
+              viewBox="0 0 6 10"
+              aria-hidden="true"
+            >
+              <path
+                d="M1 1l4 4-4 4"
+                fill="none"
+                stroke="#4C4DDC"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
         </div>
       </div>
-      <div class="bg-white border border-[#ECECEC] rounded-2xl overflow-hidden hover:shadow-lg transition">
-        <div class="bg-[#EDEDFC] flex items-center justify-center h-[189px] overflow-hidden">
-          <img src="assets/card-tools-custody.png" alt="Tools & Custody" class="w-full h-full object-cover">
+
+      <!-- DPR -->
+      <div class="platform_modules-card">
+        <div class="platform_modules-image-wrapper">
+          <img
+            src="assets/cards-inventoryAndReportImage.svg"
+            alt="DPR"
+            class="platform_modules-image"
+          >
         </div>
-        <div class="p-6">
-          <h4 class="albert-sans600 text-[18px] text-[#343434]">Tools &amp; Custody</h4>
-          <p class="text-[#575757] text-[14px] mt-2 leading-relaxed">Know who has what. Manage tool issue and return records and maintain clear custody information across your sites.</p>
-          <a href="#" class="inline-flex items-center gap-1.5 text-primary font-semibold text-[14px] mt-4">Explore Module <svg width="6" height="10" viewBox="0 0 6 10"><path d="M1 1l4 4-4 4" fill="none" stroke="#4C4DDC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+
+        <div class="platform_modules-card-content">
+          <h4 class="platform_modules-card-title">
+            DPR
+          </h4>
+
+          <p class="platform_modules-card-description">
+            Capture what actually happened on site. Record activities,
+            weather, manpower, equipment, materials and visual evidence.
+          </p>
+
+          <a href="#" class="platform_modules-link">
+            Explore Module
+            <svg
+              width="6"
+              height="10"
+              viewBox="0 0 6 10"
+              aria-hidden="true"
+            >
+              <path
+                d="M1 1l4 4-4 4"
+                fill="none"
+                stroke="#4C4DDC"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
         </div>
       </div>
+
+      <!-- Approvals & Workflows -->
+      <div class="platform_modules-card">
+        <div class="platform_modules-image-wrapper platform_modules-image-wrapper-contain">
+          <img
+            src="assets/card-approvals.png"
+            alt="Approvals & Workflows"
+            class="platform_modules-image-contain"
+          >
+        </div>
+
+        <div class="platform_modules-card-content">
+          <h4 class="platform_modules-card-title">
+            Approvals &amp; Workflows
+          </h4>
+
+          <p class="platform_modules-card-description">
+            Review DPRs, material requests, and operational tasks in one
+            approval workspace and take action without unnecessary delays.
+          </p>
+
+          <a href="#" class="platform_modules-link">
+            Explore Module
+            <svg
+              width="6"
+              height="10"
+              viewBox="0 0 6 10"
+              aria-hidden="true"
+            >
+              <path
+                d="M1 1l4 4-4 4"
+                fill="none"
+                stroke="#4C4DDC"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Inventory -->
+      <div class="platform_modules-card">
+        <div class="platform_modules-image-wrapper">
+          <img
+            src="assets/cards-inventoryAndReportImage.svg"
+            alt="Inventory"
+            class="platform_modules-image"
+          >
+        </div>
+
+        <div class="platform_modules-card-content">
+          <h4 class="platform_modules-card-title">
+            Inventory
+          </h4>
+
+          <p class="platform_modules-card-description">
+            Know what you have and where it is. Manage stock visibility,
+            material requisitions, material issues, receipts and physical
+            verification.
+          </p>
+
+          <a href="#" class="platform_modules-link">
+            Explore Module
+            <svg
+              width="6"
+              height="10"
+              viewBox="0 0 6 10"
+              aria-hidden="true"
+            >
+              <path
+                d="M1 1l4 4-4 4"
+                fill="none"
+                stroke="#4C4DDC"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Reports & Insights -->
+      <div class="platform_modules-card">
+        <div class="platform_modules-image-wrapper">
+          <img
+            src="assets/cards-inventoryAndReportImage.svg"
+            alt="Reports & Insights"
+            class="platform_modules-image"
+          >
+        </div>
+
+        <div class="platform_modules-card-content">
+          <h4 class="platform_modules-card-title">
+            Reports &amp; Insights
+          </h4>
+
+          <p class="platform_modules-card-description">
+            Turn operational data into visibility. Give project teams the
+            information they need to understand current operations and
+            identify what needs attention.
+          </p>
+
+          <a href="#" class="platform_modules-link">
+            Explore Module
+            <svg
+              width="6"
+              height="10"
+              viewBox="0 0 6 10"
+              aria-hidden="true"
+            >
+              <path
+                d="M1 1l4 4-4 4"
+                fill="none"
+                stroke="#4C4DDC"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Tools & Custody -->
+      <div class="platform_modules-card">
+        <div class="platform_modules-image-wrapper">
+          <img
+            src="assets/cards-tools-custody.svg"
+            alt="Tools & Custody"
+            class="platform_modules-image"
+          >
+        </div>
+
+        <div class="platform_modules-card-content">
+          <h4 class="platform_modules-card-title">
+            Tools &amp; Custody
+          </h4>
+
+          <p class="platform_modules-card-description">
+            Know who has what. Manage tool issue and return records and
+            maintain clear custody information across your sites.
+          </p>
+
+          <a href="#" class="platform_modules-link">
+            Explore Module
+            <svg
+              width="6"
+              height="10"
+              viewBox="0 0 6 10"
+              aria-hidden="true"
+            >
+              <path
+                d="M1 1l4 4-4 4"
+                fill="none"
+                stroke="#4C4DDC"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- ============ FIELD READY — badge/heading/steps 165x36 circles gap 124px, cards 309x170, icon 40x40 ============ -->
-<section id="features" class="bg-white py-20 sm:py-28">
-  <div class="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-[79px]">
-    <div class="text-center max-w-[640px] mx-auto mb-16">
-      <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#EDEDFC] text-primary text-[12px] font-bold tracking-wide uppercase">
-        <span class="w-3.5 h-3.5 rounded-full bg-primary"></span> Field Ready
+
+<!-- ============ WORKFLOW ============ -->
+<section id="features" class="workflow-section">
+  <div class="workflow-container">
+
+    <!-- Header -->
+    <div class="workflow-header">
+
+      <span class="workflow-badge">
+        <span class="workflow-badge-dot"></span>
+        Field Ready
       </span>
-      <h2 class="font-display font-bold text-[30px] sm:text-[38px] lg:text-[42px] text-[#343434] mt-6 leading-tight">
-        Work Doesn't Stop<br class="hidden sm:block"> When Connectivity Does.
+
+      <h2 class="workflow-title">
+        Work Doesn't Stop
+        <br class="workflow-title-break">
+        When Connectivity Does.
       </h2>
-      <p class="mt-5 text-[#444444] text-[16px] sm:text-[17px] leading-relaxed">
-        Construction sites aren't always connected. HydroERP is designed around that reality — so your teams can keep working no matter what.
+
+      <p class="workflow-description">
+        Construction sites aren't always connected. HydroERP is designed around
+        that reality — so your teams can keep working no matter what.
       </p>
+
     </div>
 
-    <div class="grid lg:grid-cols-[280px_1fr] gap-14 items-start">
-      <ol class="relative border-l-2 border-primary/20 pl-8 space-y-10 mx-auto lg:mx-0 max-w-xs w-full">
-        <li class="relative flex items-center h-9">
-          <span class="absolute -left-[41px] w-9 h-9 rounded-full bg-primary text-white flex items-center justify-center text-xs font-bold">1</span>
-          <span class="font-display font-bold text-[#343434]">Work Offline</span>
+    <!-- Workflow Content -->
+    <div class="workflow-content">
+
+      <!-- Steps -->
+      <ol class="workflow-steps">
+
+        <li class="workflow-step workflow-step--active">
+          <span class="workflow-step-number">1</span>
+          <span class="workflow-step-text">Work Offline</span>
         </li>
-        <li class="relative flex items-center h-9">
-          <span class="absolute -left-[41px] w-9 h-9 rounded-full bg-primary-light text-primary flex items-center justify-center text-xs font-bold">2</span>
-          <span class="font-display font-bold text-[#343434]">Save Securely</span>
+
+        <li class="workflow-step">
+          <span class="workflow-step-number">2</span>
+          <span class="workflow-step-text">Save Securely</span>
         </li>
-        <li class="relative flex items-center h-9">
-          <span class="absolute -left-[41px] w-9 h-9 rounded-full bg-primary-light text-primary flex items-center justify-center text-xs font-bold">3</span>
-          <span class="font-display font-bold text-[#343434]">Connection Returns</span>
+
+        <li class="workflow-step">
+          <span class="workflow-step-number">3</span>
+          <span class="workflow-step-text">Connection Returns</span>
         </li>
-        <li class="relative flex items-center h-9">
-          <span class="absolute -left-[41px] w-9 h-9 rounded-full bg-primary-light text-primary flex items-center justify-center text-xs font-bold">4</span>
-          <span class="font-display font-bold text-[#343434]">Sync</span>
+
+        <li class="workflow-step">
+          <span class="workflow-step-number">4</span>
+          <span class="workflow-step-text">Sync</span>
         </li>
-        <li class="relative flex items-center h-9">
-          <span class="absolute -left-[41px] w-9 h-9 rounded-full bg-primary-light text-primary flex items-center justify-center text-xs font-bold">5</span>
-          <span class="font-display font-bold text-[#343434]">Continue Working</span>
+
+        <li class="workflow-step">
+          <span class="workflow-step-number">5</span>
+          <span class="workflow-step-text">Continue Working</span>
         </li>
+
       </ol>
 
-      <div class="grid sm:grid-cols-2 gap-[22px]">
-        <div class="border border-gray-100 bg-[#E5E3FB]/40 rounded-2xl p-6 hover:shadow-md transition">
-          <span class="w-10 h-10 rounded-xl bg-[#ECEAFD] flex items-center justify-center mb-4">
-            <svg width="12" height="17" viewBox="673 5881 12 17"><path d="M679 5895H679.008M674.833 5881.67H683.167C684.088 5881.67 684.834 5882.41 684.834 5883.33V5896.67C684.834 5897.59 684.088 5898.33 683.167 5898.33H674.833C673.912 5898.33 673.166 5897.59 673.166 5896.67V5883.33C673.166 5882.41 673.912 5881.67 674.833 5881.67Z" stroke="#4F46E5" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <!-- Feature Cards -->
+      <div class="workflow-cards">
+
+        <!-- Card 1 -->
+        <div class="workflow-card">
+          <span class="workflow-card-icon">
+            <svg
+              width="20"
+              height="20"
+              viewBox="673 5881 12 17"
+              aria-hidden="true"
+            >
+              <path
+                d="M679 5895H679.008M674.833 5881.67H683.167C684.088 5881.67 684.834 5882.41 684.834 5883.33V5896.67C684.834 5897.59 684.088 5898.33 683.167 5898.33H674.833C673.912 5898.33 673.166 5897.59 673.166 5896.67V5883.33C673.166 5882.41 673.912 5881.67 674.833 5881.67Z"
+                stroke="#4F46E5"
+                stroke-width="2"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </span>
-          <h4 class="font-display font-bold text-[16px] text-[#343434]">Offline Drafts</h4>
-          <p class="text-[#575757] text-[14px] mt-2">Continue creating and editing DPRs without connectivity.</p>
+
+          <h4 class="workflow-card-title">
+            Offline Drafts
+          </h4>
+
+          <p class="workflow-card-description">
+            Continue creating and editing DPRs without connectivity.
+          </p>
         </div>
-        <div class="border border-gray-100 bg-[#E5E3FB]/40 rounded-2xl p-6 hover:shadow-md transition">
-          <span class="w-10 h-10 rounded-xl bg-[#ECEAFD] flex items-center justify-center mb-4">
-            <svg width="15" height="12" viewBox="1004 5884 16 12"><path d="M1004.5 5884.17H1004.51M1004.5 5890H1004.51M1004.5 5895.83H1004.51M1008.67 5884.17H1019.5M1008.67 5890H1019.5M1008.67 5895.83H1019.5" stroke="#4F46E5" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+        <!-- Card 2 -->
+        <div class="workflow-card">
+          <span class="workflow-card-icon">
+            <svg
+              width="15"
+              height="12"
+              viewBox="1004 5884 16 12"
+              aria-hidden="true"
+            >
+              <path
+                d="M1004.5 5884.17H1004.51M1004.5 5890H1004.51M1004.5 5895.83H1004.51M1008.67 5884.17H1019.5M1008.67 5890H1019.5M1008.67 5895.83H1019.5"
+                stroke="#4F46E5"
+                stroke-width="2"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </span>
-          <h4 class="font-display font-bold text-[16px] text-[#343434]">Automatic Queue</h4>
-          <p class="text-[#575757] text-[14px] mt-2">Changes wait safely until synchronization is available.</p>
+
+          <h4 class="workflow-card-title">
+            Automatic Queue
+          </h4>
+
+          <p class="workflow-card-description">
+            Changes wait safely until synchronization is available.
+          </p>
         </div>
-        <div class="border border-gray-100 bg-[#E5E3FB]/40 rounded-2xl p-6 hover:shadow-md transition">
-          <span class="w-10 h-10 rounded-xl bg-[#ECEAFD] flex items-center justify-center mb-4">
-            <svg width="17" height="13" viewBox="670 6108 17 13"><path d="M679 6120.67H679.008M670.666 6111.35C672.958 6109.3 675.925 6108.17 679 6108.17C682.075 6108.17 685.042 6109.3 687.334 6111.35M673.166 6114.71C674.724 6113.19 676.819 6112.33 679 6112.33C681.181 6112.33 683.276 6113.19 684.834 6114.71M676.083 6117.69C676.862 6116.93 677.909 6116.5 679 6116.5C680.091 6116.5 681.138 6116.93 681.917 6117.69" stroke="#4F46E5" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+        <!-- Card 3 -->
+        <div class="workflow-card">
+          <span class="workflow-card-icon">
+            <svg
+              width="17"
+              height="13"
+              viewBox="670 6108 17 13"
+              aria-hidden="true"
+            >
+              <path
+                d="M679 6120.67H679.008M670.666 6111.35C672.958 6109.3 675.925 6108.17 679 6108.17C682.075 6108.17 685.042 6109.3 687.334 6111.35M673.166 6114.71C674.724 6113.19 676.819 6112.33 679 6112.33C681.181 6112.33 683.276 6113.19 684.834 6114.71M676.083 6117.69C676.862 6116.93 677.909 6116.5 679 6116.5C680.091 6116.5 681.138 6116.93 681.917 6117.69"
+                stroke="#4F46E5"
+                stroke-width="2"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </span>
-          <h4 class="font-display font-bold text-[16px] text-[#343434]">Sync Status</h4>
-          <p class="text-[#575757] text-[14px] mt-2">Know exactly whether your work is synchronized.</p>
+
+          <h4 class="workflow-card-title">
+            Sync Status
+          </h4>
+
+          <p class="workflow-card-description">
+            Know exactly whether your work is synchronized.
+          </p>
         </div>
-        <div class="border border-gray-100 bg-[#E5E3FB]/40 rounded-2xl p-6 hover:shadow-md transition">
-          <span class="w-10 h-10 rounded-xl bg-[#ECEAFD] flex items-center justify-center mb-4">
-            <svg width="13" height="17" viewBox="1005 6105 14 17"><path d="M1012.28 6122.29C1015.75 6121.08 1018.67 6119 1018.67 6114.83V6109C1018.67 6108.78 1018.58 6108.57 1018.42 6108.41C1018.27 6108.25 1018.05 6108.17 1017.83 6108.17C1016.17 6108.17 1014.09 6107.17 1012.63 6105.9C1012.46 6105.75 1012.23 6105.67 1012 6105.67C1011.77 6105.67 1011.54 6105.75 1011.37 6105.9C1009.92 6107.17 1007.83 6108.17 1006.17 6108.17C1005.95 6108.17 1005.73 6108.25 1005.58 6108.41C1005.42 6108.57 1005.33 6108.78 1005.33 6109V6114.83C1005.33 6119 1008.25 6121.08 1011.73 6122.28C1011.9 6122.35 1012.1 6122.35 1012.28 6122.29Z" stroke="#4F46E5" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+        <!-- Card 4 -->
+        <div class="workflow-card">
+          <span class="workflow-card-icon">
+            <svg
+              width="13"
+              height="17"
+              viewBox="1005 6105 14 17"
+              aria-hidden="true"
+            >
+              <path
+                d="M1012.28 6122.29C1015.75 6121.08 1018.67 6119 1018.67 6114.83V6109C1018.67 6108.78 1018.58 6108.57 1018.42 6108.41C1018.27 6108.25 1018.05 6108.17 1017.83 6108.17C1016.17 6108.17 1014.09 6107.17 1012.63 6105.9C1012.46 6105.75 1012.23 6105.67 1012 6105.67C1011.77 6105.67 1011.54 6105.75 1011.37 6105.9C1009.92 6107.17 1007.83 6108.17 1006.17 6108.17C1005.95 6108.17 1005.73 6108.25 1005.58 6108.41C1005.42 6108.57 1005.33 6108.78 1005.33 6109V6114.83C1005.33 6119 1008.25 6121.08 1011.73 6122.28C1011.9 6122.35 1012.1 6122.35 1012.28 6122.29Z"
+                stroke="#4F46E5"
+                stroke-width="2"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </span>
-          <h4 class="font-display font-bold text-[16px] text-[#343434]">Conflict Handling</h4>
-          <p class="text-[#575757] text-[14px] mt-2">Resolve changes safely instead of silently overwriting information.</p>
+
+          <h4 class="workflow-card-title">
+            Conflict Handling
+          </h4>
+
+          <p class="workflow-card-description">
+            Resolve changes safely instead of silently overwriting information.
+          </p>
         </div>
+
       </div>
+
     </div>
   </div>
 </section>
+
 
 <!-- ============ TESTIMONIALS — stars #FF6B35, cards 328x249 ============ -->
-<section class="section-tint py-20 sm:py-28">
-  <div class="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-[79px]">
-    <div class="text-center max-w-[640px] mx-auto mb-16">
-      <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#EDEDFC] text-primary text-[12px] font-bold tracking-wide uppercase">
-        <span class="w-3.5 h-3.5 rounded-full bg-primary"></span> Client Reviews
+<section class="testimonials-section">
+  <div class="testimonials-container">
+
+    <!-- Section Header -->
+    <div class="testimonials-header">
+
+      <span class="testimonials-badge">
+        <span class="testimonials-badge-dot"></span>
+        Client Reviews
       </span>
-      <h2 class="font-display font-bold text-[30px] sm:text-[38px] lg:text-[42px] text-[#343434] mt-6 leading-tight">
+
+      <h2 class="testimonials-title">
         Trusted By Project Teams
       </h2>
-      <p class="mt-5 text-[#444444] text-[16px] sm:text-[17px] leading-relaxed">
-        See how construction teams use HydroERP to bring field operations, project management, and decision-making into one connected workflow.
+
+      <p class="testimonials-intro">
+        See how construction teams use HydroERP to bring field operations,
+        project management, and decision-making into one connected workflow.
       </p>
+
     </div>
 
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="bg-white rounded-2xl p-7 shadow-sm border border-gray-100">
-        <div class="flex gap-1 mb-4">
-          <svg width="15" height="14" viewBox="0 0 15 14" fill="#FF6B35"><path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/></svg>
-          <svg width="15" height="14" viewBox="0 0 15 14" fill="#FF6B35"><path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/></svg>
-          <svg width="15" height="14" viewBox="0 0 15 14" fill="#FF6B35"><path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/></svg>
-          <svg width="15" height="14" viewBox="0 0 15 14" fill="#FF6B35"><path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/></svg>
-          <svg width="15" height="14" viewBox="0 0 15 14" fill="#FF6B35"><path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/></svg>
+    <!-- Testimonials Grid -->
+    <div class="testimonials-grid">
+
+      <!-- Testimonial 1 -->
+      <div class="testimonials-card">
+
+        <div class="testimonials-stars">
+          <svg width="15" height="14" viewBox="0 0 15 14" fill="#FF6B35">
+            <path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/>
+          </svg>
+
+          <svg width="15" height="14" viewBox="0 0 15 14" fill="#FF6B35">
+            <path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/>
+          </svg>
+
+          <svg width="15" height="14" viewBox="0 0 15 14" fill="#FF6B35">
+            <path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/>
+          </svg>
+
+          <svg width="15" height="14" viewBox="0 0 15 14" fill="#FF6B35">
+            <path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/>
+          </svg>
+
+          <svg width="15" height="14" viewBox="0 0 15 14" fill="#FF6B35">
+            <path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/>
+          </svg>
         </div>
-        <p class="text-[#575757] text-[15px] leading-relaxed">Hydro ERP has made our project management much more organized and efficient. Everything we need is now in one place</p>
-        <div class="flex items-center gap-3 mt-6">
-          <img src="assets/avatar-1.png" alt="Elizabeth" class="w-10 h-10 rounded-full object-cover">
-          <div>
-            <p class="font-semibold text-[#343434] text-[14px]">Elizabeth</p>
-            <p class="text-[#A1A1A1] text-[12px]">Nepal</p>
+
+        <p class="testimonials-text">
+          Hydro ERP has made our project management much more organized and
+          efficient. Everything we need is now in one place
+        </p>
+
+        <div class="testimonials-author">
+          <img
+            src="assets/avatar-1.png"
+            alt="Elizabeth"
+            class="testimonials-avatar"
+          >
+
+          <div class="testimonials-author-info">
+            <p class="testimonials-author-name">Elizabeth</p>
+            <p class="testimonials-author-location">Nepal</p>
           </div>
         </div>
+
       </div>
-      <div class="bg-white rounded-2xl p-7 shadow-sm border border-gray-100">
-        <div class="flex gap-1 mb-4">
-          <svg width="15" height="14" viewBox="0 0 15 14" fill="#FF6B35"><path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/></svg>
-          <svg width="15" height="14" viewBox="0 0 15 14" fill="#FF6B35"><path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/></svg>
-          <svg width="15" height="14" viewBox="0 0 15 14" fill="#FF6B35"><path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/></svg>
-          <svg width="15" height="14" viewBox="0 0 15 14" fill="#FF6B35"><path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/></svg>
-          <svg width="15" height="14" viewBox="0 0 15 14" fill="#FF6B35"><path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/></svg>
+
+      <!-- Testimonial 2 -->
+      <div class="testimonials-card">
+
+        <div class="testimonials-stars">
+          <svg width="15" height="14" viewBox="0 0 15 14" fill="#FF6B35">
+            <path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/>
+          </svg>
+
+          <svg width="15" height="14" viewBox="0 0 15 14" fill="#FF6B35">
+            <path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/>
+          </svg>
+
+          <svg width="15" height="14" viewBox="0 0 15 14" fill="#FF6B35">
+            <path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/>
+          </svg>
+
+          <svg width="15" height="14" viewBox="0 0 15 14" fill="#FF6B35">
+            <path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/>
+          </svg>
+
+          <svg width="15" height="14" viewBox="0 0 15 14" fill="#FF6B35">
+            <path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/>
+          </svg>
         </div>
-        <p class="text-[#575757] text-[15px] leading-relaxed">Hydro ERP has helped us save time, reduce manual work, and keep our entire team connected.</p>
-        <div class="flex items-center gap-3 mt-6">
-          <img src="assets/avatar-2.jpg" alt="Elizabeth" class="w-10 h-10 rounded-full object-cover">
-          <div>
-            <p class="font-semibold text-[#343434] text-[14px]">Elizabeth</p>
-            <p class="text-[#A1A1A1] text-[12px]">Nepal</p>
+
+        <p class="testimonials-text">
+          Hydro ERP has helped us save time, reduce manual work, and keep our
+          entire team connected.
+        </p>
+
+        <div class="testimonials-author">
+          <img
+            src="assets/avatar-2.jpg"
+            alt="Elizabeth"
+            class="testimonials-avatar"
+          >
+
+          <div class="testimonials-author-info">
+            <p class="testimonials-author-name">Elizabeth</p>
+            <p class="testimonials-author-location">Nepal</p>
           </div>
         </div>
+
       </div>
-      <div class="bg-white rounded-2xl p-7 shadow-sm border border-gray-100">
-        <div class="flex gap-1 mb-4">
-          <svg width="15" height="14" viewBox="0 0 15 14" fill="#FF6B35"><path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/></svg>
-          <svg width="15" height="14" viewBox="0 0 15 14" fill="#FF6B35"><path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/></svg>
-          <svg width="15" height="14" viewBox="0 0 15 14" fill="#FF6B35"><path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/></svg>
-          <svg width="15" height="14" viewBox="0 0 15 14" fill="#FF6B35"><path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/></svg>
-          <svg width="15" height="14" viewBox="0 0 15 14" fill="#FF6B35"><path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/></svg>
+
+      <!-- Testimonial 3 -->
+      <div class="testimonials-card">
+
+        <div class="testimonials-stars">
+          <svg width="15" height="14" viewBox="0 0 15 14" fill="#FF6B35">
+            <path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/>
+          </svg>
+
+          <svg width="15" height="14" viewBox="0 0 15 14" fill="#FF6B35">
+            <path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/>
+          </svg>
+
+          <svg width="15" height="14" viewBox="0 0 15 14" fill="#FF6B35">
+            <path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/>
+          </svg>
+
+          <svg width="15" height="14" viewBox="0 0 15 14" fill="#FF6B35">
+            <path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/>
+          </svg>
+
+          <svg width="15" height="14" viewBox="0 0 15 14" fill="#FF6B35">
+            <path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/>
+          </svg>
         </div>
-        <p class="text-[#575757] text-[15px] leading-relaxed">Hydro ERP has made our project management much more organized and efficient. Everything we need is now in one place</p>
-        <div class="flex items-center gap-3 mt-6">
-          <img src="assets/avatar-3.jpg" alt="Elizabeth" class="w-10 h-10 rounded-full object-cover">
-          <div>
-            <p class="font-semibold text-[#343434] text-[14px]">Elizabeth</p>
-            <p class="text-[#A1A1A1] text-[12px]">Nepal</p>
+
+        <p class="testimonials-text">
+          Hydro ERP has made our project management much more organized and
+          efficient. Everything we need is now in one place
+        </p>
+
+        <div class="testimonials-author">
+          <img
+            src="assets/avatar-3.jpg"
+            alt="Elizabeth"
+            class="testimonials-avatar"
+          >
+
+          <div class="testimonials-author-info">
+            <p class="testimonials-author-name">Elizabeth</p>
+            <p class="testimonials-author-location">Nepal</p>
           </div>
         </div>
+
       </div>
+
     </div>
   </div>
 </section>
 
+
 <!-- ============ FAQ ============ -->
-<section id="pricing" class="bg-white py-20 sm:py-28">
-  <div class="max-w-[1050px] mx-auto px-5 sm:px-8 lg:px-10">
-    <div class="text-center mb-14">
-      <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#EDEDFC] text-primary text-[12px] font-bold tracking-wide uppercase">
-        <span class="w-3.5 h-3.5 rounded-full bg-primary"></span> FAQs
+<section id="pricing" class="faq-section">
+  <div class="faq-container">
+
+    <div class="faq-header">
+      <span class="faq-badge">
+        <span class="faq-badge-dot"></span>
+        FAQs
       </span>
-      <h2 class="font-display font-bold text-[30px] sm:text-[38px] lg:text-[42px] text-[#343434] mt-6">
+
+      <h2 class="faq-title">
         Frequently asked questions
       </h2>
     </div>
 
-    <div class="space-y-4">
-      <details open class="group border border-[#ADADEF] rounded-xl p-5 sm:p-6 bg-white">
-        <summary class="flex items-center justify-between gap-4">
-          <span class="font-semibold text-[#444444] text-[15px]">1. What is Hydro ERP?</span>
-          <span class="shrink-0 text-[#444444]">
-            <svg class="accordion-icon-minus" width="14" height="2" viewBox="0 0 14 2"><rect width="14" height="2" fill="currentColor"/></svg>
-            <svg class="accordion-icon-plus" width="14" height="14" viewBox="0 0 14 14"><path d="M6 0h2v6h6v2H8v6H6V8H0V6h6z" fill="currentColor"/></svg>
+    <div class="faq-list">
+
+      <!-- FAQ 1 -->
+      <details open class="faq-item faq-item--open">
+        <summary class="faq-summary">
+          <span class="faq-question">
+            1. What is Hydro ERP?
+          </span>
+
+          <span class="faq-icon">
+            <svg
+              class="faq-icon-minus"
+              width="14"
+              height="2"
+              viewBox="0 0 14 2"
+              aria-hidden="true"
+            >
+              <rect width="14" height="2" fill="currentColor"/>
+            </svg>
+
+            <svg
+              class="faq-icon-plus"
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              aria-hidden="true"
+            >
+              <path
+                d="M6 0h2v6h6v2H8v6H6V8H0V6h6z"
+                fill="currentColor"
+              />
+            </svg>
           </span>
         </summary>
-        <p class="text-[#3E4145] mt-3 leading-relaxed text-[15px]">Hydro ERP is an all-in-one platform designed to simplify and manage hydropower projects, operations, resources, and business processes.</p>
+
+        <p class="faq-answer">
+          Hydro ERP is an all-in-one platform designed to simplify and manage
+          hydropower projects, operations, resources, and business processes.
+        </p>
       </details>
 
-      <details class="group border border-gray-200 rounded-xl p-5 sm:p-6 bg-white">
-        <summary class="flex items-center justify-between gap-4">
-          <span class="font-semibold text-[#575757] text-[15px]">Who can use Hydro ERP?</span>
-          <span class="shrink-0 text-[#707070]">
-            <svg class="accordion-icon-minus" width="14" height="2" viewBox="0 0 14 2"><rect width="14" height="2" fill="currentColor"/></svg>
-            <svg class="accordion-icon-plus" width="14" height="14" viewBox="0 0 14 14"><path d="M6 0h2v6h6v2H8v6H6V8H0V6h6z" fill="currentColor"/></svg>
+      <!-- FAQ 2 -->
+      <details class="faq-item">
+        <summary class="faq-summary">
+          <span class="faq-question">
+            Who can use Hydro ERP?
+          </span>
+
+          <span class="faq-icon">
+            <svg
+              class="faq-icon-minus"
+              width="14"
+              height="2"
+              viewBox="0 0 14 2"
+              aria-hidden="true"
+            >
+              <rect width="14" height="2" fill="currentColor"/>
+            </svg>
+
+            <svg
+              class="faq-icon-plus"
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              aria-hidden="true"
+            >
+              <path
+                d="M6 0h2v6h6v2H8v6H6V8H0V6h6z"
+                fill="currentColor"
+              />
+            </svg>
           </span>
         </summary>
-        <p class="text-[#3E4145] mt-3 leading-relaxed text-[15px]">Project managers, site engineers, store &amp; inventory teams, plant operators and management teams at construction and hydropower companies across Nepal.</p>
+
+        <p class="faq-answer">
+          Project managers, site engineers, store &amp; inventory teams,
+          plant operators and management teams at construction and hydropower
+          companies across Nepal.
+        </p>
       </details>
 
-      <details class="group border border-gray-200 rounded-xl p-5 sm:p-6 bg-white">
-        <summary class="flex items-center justify-between gap-4">
-          <span class="font-semibold text-[#575757] text-[15px]">What can I manage with Hydro ERP?</span>
-          <span class="shrink-0 text-[#707070]">
-            <svg class="accordion-icon-minus" width="14" height="2" viewBox="0 0 14 2"><rect width="14" height="2" fill="currentColor"/></svg>
-            <svg class="accordion-icon-plus" width="14" height="14" viewBox="0 0 14 14"><path d="M6 0h2v6h6v2H8v6H6V8H0V6h6z" fill="currentColor"/></svg>
+      <!-- FAQ 3 -->
+      <details class="faq-item">
+        <summary class="faq-summary">
+          <span class="faq-question">
+            What can I manage with Hydro ERP?
+          </span>
+
+          <span class="faq-icon">
+            <svg
+              class="faq-icon-minus"
+              width="14"
+              height="2"
+              viewBox="0 0 14 2"
+              aria-hidden="true"
+            >
+              <rect width="14" height="2" fill="currentColor"/>
+            </svg>
+
+            <svg
+              class="faq-icon-plus"
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              aria-hidden="true"
+            >
+              <path
+                d="M6 0h2v6h6v2H8v6H6V8H0V6h6z"
+                fill="currentColor"
+              />
+            </svg>
           </span>
         </summary>
-        <p class="text-[#3E4145] mt-3 leading-relaxed text-[15px]">DPRs, approvals, inventory, equipment, tools &amp; custody, reports and insights — all from one connected platform.</p>
+
+        <p class="faq-answer">
+          DPRs, approvals, inventory, equipment, tools &amp; custody,
+          reports and insights — all from one connected platform.
+        </p>
       </details>
 
-      <details class="group border border-gray-200 rounded-xl p-5 sm:p-6 bg-white">
-        <summary class="flex items-center justify-between gap-4">
-          <span class="font-semibold text-[#575757] text-[15px]">Can I access Hydro ERP remotely?</span>
-          <span class="shrink-0 text-[#707070]">
-            <svg class="accordion-icon-minus" width="14" height="2" viewBox="0 0 14 2"><rect width="14" height="2" fill="currentColor"/></svg>
-            <svg class="accordion-icon-plus" width="14" height="14" viewBox="0 0 14 14"><path d="M6 0h2v6h6v2H8v6H6V8H0V6h6z" fill="currentColor"/></svg>
+      <!-- FAQ 4 -->
+      <details class="faq-item">
+        <summary class="faq-summary">
+          <span class="faq-question">
+            Can I access Hydro ERP remotely?
+          </span>
+
+          <span class="faq-icon">
+            <svg
+              class="faq-icon-minus"
+              width="14"
+              height="2"
+              viewBox="0 0 14 2"
+              aria-hidden="true"
+            >
+              <rect width="14" height="2" fill="currentColor"/>
+            </svg>
+
+            <svg
+              class="faq-icon-plus"
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              aria-hidden="true"
+            >
+              <path
+                d="M6 0h2v6h6v2H8v6H6V8H0V6h6z"
+                fill="currentColor"
+              />
+            </svg>
           </span>
         </summary>
-        <p class="text-[#3E4145] mt-3 leading-relaxed text-[15px]">Yes. HydroERP works on web and mobile, online or offline, so you can access it from the office, the site, or anywhere in between.</p>
+
+        <p class="faq-answer">
+          Yes. HydroERP works on web and mobile, online or offline, so you can
+          access it from the office, the site, or anywhere in between.
+        </p>
       </details>
+
     </div>
 
-    <div class="bg-[#F8FAFC] rounded-2xl p-10 mt-8 text-center">
-      <div class="flex items-center justify-center -space-x-3 mb-4">
-        <img src="assets/avatar-1.png" class="w-[43px] h-[43px] rounded-full ring-2 ring-white object-cover" alt="">
-        <img src="assets/avatar-3.jpg" class="w-[58px] h-[58px] rounded-full ring-2 ring-white object-cover z-10" alt="">
-        <img src="assets/avatar-2.jpg" class="w-[43px] h-[43px] rounded-full ring-2 ring-white object-cover" alt="">
+    <!-- FAQ Contact CTA -->
+    <div class="faq-contact">
+
+      <div class="faq-avatars">
+        <img
+          src="assets/avatar-1.png"
+          class="faq-avatar faq-avatar--small"
+          alt=""
+        >
+
+        <img
+          src="assets/avatar-3.jpg"
+          class="faq-avatar faq-avatar--large"
+          alt=""
+        >
+
+        <img
+          src="assets/avatar-2.jpg"
+          class="faq-avatar faq-avatar--small"
+          alt=""
+        >
       </div>
-      <h4 class="font-display font-bold text-[17px] text-[#575757]">Still have questions?</h4>
-      <p class="text-[#404348] mt-1 text-[14px]">Can't find the answer you're looking for? Please chat with our friendly team.</p>
-      <a href="#" class="inline-flex items-center gap-2 mt-5 px-6 py-3 rounded-lg bg-primary text-white text-sm font-semibold hover:bg-primary-dark transition">
-        <i class="fa-regular fa-comment-dots"></i> Get in Touch
+
+      <h4 class="faq-contact-title">
+        Still have questions?
+      </h4>
+
+      <p class="faq-contact-description">
+        Can't find the answer you're looking for?
+        Please chat with our friendly team.
+      </p>
+
+      <a href="#" class="faq-contact-button">
+        <i class="fa-regular fa-comment-dots"></i>
+        Get in Touch
       </a>
+
     </div>
+
   </div>
 </section>
 
+
 <!-- ============ CTA ============ -->
-<section class="cta-bg grid-pattern-dark relative overflow-hidden py-20 sm:py-28">
-  <div class="max-w-[1050px] mx-auto px-5 sm:px-8 lg:px-10 text-center relative z-10">
-    <h2 class="font-display font-bold text-[30px] sm:text-[38px] lg:text-[42px] text-white leading-tight">
-      Turn Complex Operation into<br class="hidden sm:block"> Simple Workflows.
+<section class="cta-bg cta-grid-pattern">
+  <div class="cta-container">
+
+    <h2 class="cta-title">
+      Turn Complex Operation into
+      <br class="cta-title-break">
+      Simple Workflows.
     </h2>
-    <p class="mt-6 text-[#EDEDFC] text-[16px] sm:text-[17px] max-w-[640px] mx-auto leading-relaxed">
+
+    <p class="cta-description">
       Bring your projects, teams, and operations together in one powerful platform built to help you work smarter and deliver better results.
     </p>
 
-    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-9">
-      <a href="#" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 h-[51px] px-7 rounded-lg bg-white text-primary font-semibold hover:bg-gray-100 transition">
+    <div class="cta-actions">
+
+      <a href="#" class="cta-button cta-button--primary">
         Start Free Trial
-        <svg width="9" height="9" viewBox="674 473 10 11"><path d="M674.332 478.5H683.666M678.999 483.167L683.666 478.5L678.999 473.833" stroke="#4C4DDC" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+
+        <svg
+          width="9"
+          height="9"
+          viewBox="674 473 10 11"
+        >
+          <path
+            d="M674.332 478.5H683.666M678.999 483.167L683.666 478.5L678.999 473.833"
+            stroke="#4C4DDC"
+            stroke-width="2"
+            fill="none"
+            stroke-linecap="round"
+          />
+        </svg>
       </a>
-      <a href="#" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 h-[50px] px-7 rounded-lg border border-white/40 text-white font-semibold hover:bg-white/10 transition">
+
+      <a href="#" class="cta-button cta-button--secondary">
         Book a Demo
-        <svg width="4" height="8" viewBox="869 474 5 9"><path d="M870 482.5L874 478.5L870 474.5" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+
+        <svg
+          width="4"
+          height="8"
+          viewBox="869 474 5 9"
+        >
+          <path
+            d="M870 482.5L874 478.5L870 474.5"
+            stroke="white"
+            stroke-width="2"
+            fill="none"
+            stroke-linecap="round"
+          />
+        </svg>
       </a>
+
     </div>
 
-    <div class="flex items-center justify-center gap-4 mt-10">
-      <span class="fade-line flex-1 max-w-[80px] sm:max-w-[160px] opacity-30"></span>
-      <span class="flex items-center gap-2 text-white text-sm whitespace-nowrap">
-        <span class="flex gap-0.5">
-          <svg width="13" height="12" viewBox="0 0 15 14" fill="#E6A402"><path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/></svg>
-          <svg width="13" height="12" viewBox="0 0 15 14" fill="#E6A402"><path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/></svg>
-          <svg width="13" height="12" viewBox="0 0 15 14" fill="#E6A402"><path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/></svg>
-          <svg width="13" height="12" viewBox="0 0 15 14" fill="#E6A402"><path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/></svg>
-          <svg width="13" height="12" viewBox="0 0 15 14" fill="#E6A402"><path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/></svg>
+    <div class="cta-reviews">
+
+      <span class="cta-fade-line"></span>
+
+      <span class="cta-review-content">
+
+        <span class="cta-stars">
+
+          <svg width="13" height="12" viewBox="0 0 15 14" fill="#E6A402">
+            <path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/>
+          </svg>
+
+          <svg width="13" height="12" viewBox="0 0 15 14" fill="#E6A402">
+            <path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/>
+          </svg>
+
+          <svg width="13" height="12" viewBox="0 0 15 14" fill="#E6A402">
+            <path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/>
+          </svg>
+
+          <svg width="13" height="12" viewBox="0 0 15 14" fill="#E6A402">
+            <path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/>
+          </svg>
+
+          <svg width="13" height="12" viewBox="0 0 15 14" fill="#E6A402">
+            <path d="M7.5 0l2 4.5 5 .5-3.7 3.3 1 4.9L7.5 11l-4.3 2.2 1-4.9L0.5 5l5-.5z"/>
+          </svg>
+
         </span>
-        4.9/5 <span class="text-indigo-300">|</span> 200+ Reviews
+
+        4.9/5
+        <span class="cta-review-separator">|</span>
+        200+ Reviews
+
       </span>
-      <span class="fade-line flex-1 max-w-[80px] sm:max-w-[160px] opacity-30"></span>
+
+      <span class="cta-fade-line"></span>
+
     </div>
 
-    <div class="flex items-center justify-center gap-4 mt-8 flex-wrap">
-      <a href="#" class="flex items-center gap-2 bg-white border border-[#9C9C9C] rounded-lg px-4 h-[39px]">
+    <div class="cta-apps">
+
+      <!-- Google Play -->
+      <a href="#" class="cta-app-button cta-app-button--google">
+
         <svg width="15" height="21" viewBox="592 8827 15 21">
           <path d="M601.805 8838.46L592.09 8849.01C592.091 8849.01 592.091 8849.01 592.091 8849.01C592.39 8850.16 593.412 8851 594.625 8851C595.111 8851 595.566 8850.87 595.957 8850.63L595.988 8850.61L606.923 8844.16L601.805 8838.46Z" fill="#EA4335"/>
           <path d="M611.633 8836.67L611.624 8836.66L606.903 8833.86L601.584 8838.7L606.922 8844.16L611.618 8841.39C612.441 8840.93 613 8840.05 613 8839.02C613 8838.01 612.449 8837.12 611.633 8836.67Z" fill="#FBBC04"/>
           <path d="M592.089 8828.99C592.031 8829.21 592 8829.44 592 8829.68V8848.32C592 8848.56 592.031 8848.79 592.09 8849.01L602.139 8838.73L592.089 8828.99Z" fill="#4285F4"/>
           <path d="M601.877 8839L606.904 8833.86L595.982 8827.38C595.585 8827.14 595.122 8827 594.626 8827C593.412 8827 592.389 8827.84 592.09 8828.99C592.09 8828.99 592.089 8828.99 592.089 8828.99L601.877 8839Z" fill="#34A853"/>
         </svg>
-        <span class="text-left leading-tight">
-          <span class="block text-[9px] text-gray-500 tracking-wide">GET IT ON</span>
-          <span class="block text-[14px] font-semibold text-gray-900 -mt-0.5">Google Play</span>
+
+        <span class="cta-app-text">
+          <span class="cta-app-label">GET IT ON</span>
+          <span class="cta-app-name">Google Play</span>
         </span>
+
       </a>
-      <a href="#" class="flex items-center gap-2 bg-black border border-[#A6A6A6] rounded-lg px-4 h-[39px]">
-        <svg width="16" height="15" viewBox="744 8826 20 19" fill="white"><path d="M760.705 8839.76C760.717 8838.84 760.967 8837.94 761.432 8837.14C761.897 8836.34 762.562 8835.67 763.365 8835.19C762.855 8834.48 762.182 8833.89 761.4 8833.48C760.618 8833.07 759.748 8832.84 758.859 8832.81C756.964 8832.61 755.126 8833.92 754.16 8833.92C753.175 8833.92 751.688 8832.83 750.086 8832.86C749.05 8832.89 748.041 8833.19 747.156 8833.71C746.271 8834.24 745.541 8834.98 745.037 8835.87C742.854 8839.56 744.482 8844.98 746.573 8847.96C747.62 8849.42 748.843 8851.06 750.443 8851C752.009 8850.93 752.593 8850.02 754.484 8850.02C756.356 8850.02 756.905 8851 758.537 8850.96C760.218 8850.93 761.276 8849.49 762.286 8848.02C763.038 8846.98 763.616 8845.83 764 8844.61C763.024 8844.21 762.191 8843.53 761.605 8842.67C761.019 8841.81 760.706 8840.8 760.705 8839.76Z"/></svg>
-        <span class="text-left leading-tight">
-          <span class="block text-[9px] text-gray-300 tracking-wide">Download on the</span>
-          <span class="block text-[14px] font-semibold text-white -mt-0.5">App Store</span>
+
+      <!-- App Store -->
+      <a href="#" class="cta-app-button cta-app-button--apple">
+
+        <svg
+          width="16"
+          height="15"
+          viewBox="744 8826 20 19"
+          fill="white"
+        >
+          <path d="M760.705 8839.76C760.717 8838.84 760.967 8837.94 761.432 8837.14C761.897 8836.34 762.562 8835.67 763.365 8835.19C762.855 8834.48 762.182 8833.89 761.4 8833.48C760.618 8833.07 759.748 8832.84 758.859 8832.81C756.964 8832.61 755.126 8833.92 754.16 8833.92C753.175 8833.92 751.688 8832.83 750.086 8832.86C749.05 8832.89 748.041 8833.19 747.156 8833.71C746.271 8834.24 745.541 8834.98 745.037 8835.87C742.854 8839.56 744.482 8844.98 746.573 8847.96C747.62 8849.42 748.843 8851.06 750.443 8851C752.009 8850.93 752.593 8850.02 754.484 8850.02C756.356 8850.02 756.905 8851 758.537 8850.96C760.218 8850.93 761.276 8849.49 762.286 8848.02C763.038 8846.98 763.616 8845.83 764 8844.61C763.024 8844.21 762.191 8843.53 761.605 8842.67C761.019 8841.81 760.706 8840.8 760.705 8839.76Z"/>
+        </svg>
+
+        <span class="cta-app-text">
+          <span class="cta-app-label">Download on the</span>
+          <span class="cta-app-name">App Store</span>
         </span>
+
       </a>
+
     </div>
+
   </div>
 </section>
+
 
 <!-- ============ FOOTER ============ -->
 <footer class="footer-bg">

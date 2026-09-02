@@ -1,34 +1,1784 @@
+/* =========================================================
+   PLATFORM MODULES
+   ========================================================= */
 
-/* ================================
-   Footer
-================================ */
+.platform_modules-section {
+  background: #F4F8FF;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.platform_modules-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 79px;
+  padding-right: 79px;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.platform_modules-header {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto 64px;
+  text-align: center;
+}
+
+.platform_modules-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 6px 16px;
+
+  border-radius: 999px;
+
+  background-color: #EDEDFC;
+  color: #4C4DDC;
+
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.platform_modules-badge-dot {
+  width: 14px;
+  height: 14px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+  background-color: #4C4DDC;
+}
+
+.platform_modules-title {
+  margin: 24px 0 0;
+
+  color: #343434;
+
+  font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.platform_modules-description {
+  margin: 20px 0 0;
+
+  color: #444444;
+
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.625;
+}
+
+
+/* =========================================================
+   CARD GRID
+   ========================================================= */
+
+.platform_modules-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  column-gap: 30px;
+  row-gap: 22px;
+}
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.platform_modules-card {
+  overflow: hidden;
+
+  background-color: #FFFFFF;
+
+  border: 1px solid #ECECEC;
+  border-radius: 16px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================================================
+   CARD IMAGE
+   ========================================================= */
+
+.platform_modules-image-wrapper {
+  width: 100%;
+  height: 189px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  background-color: #EDEDFC;
+}
+
+.platform_modules-image {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.platform_modules-image-wrapper-contain {
+  overflow: hidden;
+}
+
+.platform_modules-image-contain {
+  display: block;
+
+  height: 100%;
+  width: auto;
+
+  object-fit: contain;
+}
+
+
+/* =========================================================
+   CARD CONTENT
+   ========================================================= */
+
+.platform_modules-card-content {
+  padding: 24px;
+}
+
+.platform_modules-card-title {
+  margin: 0;
+
+  color: #343434;
+
+  font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.platform_modules-card-description {
+  margin: 8px 0 0;
+
+  color: #575757;
+
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.625;
+}
+
+.platform_modules-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  margin-top: 16px;
+
+  color: #4C4DDC;
+
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.platform_modules-link:hover {
+  color: #3B3CC0;
+}
+
+.platform_modules-link svg {
+  display: block;
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1024px) {
+  .platform_modules-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .platform_modules-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .platform_modules-title {
+    font-size: 38px;
+  }
+}
+
+
+@media (max-width: 640px) {
+  .platform_modules-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .platform_modules-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .platform_modules-header {
+    margin-bottom: 48px;
+  }
+
+  .platform_modules-title {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .platform_modules-title-break {
+    display: none;
+  }
+
+  .platform_modules-description {
+    font-size: 16px;
+  }
+
+  .platform_modules-grid {
+    grid-template-columns: 1fr;
+    row-gap: 22px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================================
+   WORKFLOW SECTION
+======================================== */
+
+.workflow-section {
+  background-color: #ffffff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+
+/* ========================================
+   WORKFLOW CONTAINER
+======================================== */
+
+.workflow-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+/* ========================================
+   WORKFLOW HEADER
+======================================== */
+
+.workflow-header {
+  max-width: 640px;
+  margin: 0 auto 64px;
+  text-align: center;
+}
+
+
+/* ========================================
+   WORKFLOW BADGE
+======================================== */
+
+.workflow-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 6px 16px;
+
+  border-radius: 999px;
+
+  background-color: #EDEDFC;
+  color: #4C4DDC;
+
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}
+
+
+.workflow-badge-dot {
+  width: 14px;
+  height: 14px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+  background-color: #4C4DDC;
+}
+
+
+/* ========================================
+   WORKFLOW TITLE
+======================================== */
+
+.workflow-title {
+  margin: 24px 0 0;
+
+  color: #343434;
+
+  font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+
+.workflow-title-break {
+  display: none;
+}
+
+
+/* ========================================
+   WORKFLOW DESCRIPTION
+======================================== */
+
+.workflow-description {
+  margin: 20px 0 0;
+
+  color: #444444;
+
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.625;
+}
+
+
+/* ========================================
+   WORKFLOW CONTENT
+======================================== */
+
+.workflow-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 56px;
+  align-items: start;
+}
+
+
+/* ========================================
+   WORKFLOW STEPS
+======================================== */
+
+.workflow-steps {
+  position: relative;
+
+  width: 100%;
+  max-width: 320px;
+
+  margin: 0 auto;
+  padding: 0 0 0 22px;
+
+  list-style: none;
+
+  border-left: 2px solid rgba(76, 77, 220, 0.20);
+}
+
+
+.workflow-step {
+  position: relative;
+
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 40px;
+}
+
+
+.workflow-step:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ========================================
+   WORKFLOW STEP NUMBER
+======================================== */
+
+.workflow-step-number {
+  position: absolute;
+
+  left: -41px;
+
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background-color: #EDEDFC;
+  color: #4C4DDC;
+
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+
+.workflow-step--active .workflow-step-number {
+  background-color: #4C4DDC;
+  color: #ffffff;
+}
+
+
+/* ========================================
+   WORKFLOW STEP TEXT
+======================================== */
+
+.workflow-step-text {
+  color: #343434;
+
+  font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+
+  padding-left:60px;
+}
+
+
+/* ========================================
+   WORKFLOW CARDS
+======================================== */
+
+.workflow-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 22px;
+}
+
+
+/* ========================================
+   WORKFLOW CARD
+======================================== */
+
+.workflow-card {
+  min-height: 170px;
+
+  padding: 24px;
+
+  border: 1px solid #E5E3FB;
+  border-radius: 16px;
+
+  background-color:#FFFFFF;
+  box-shadow: 0px 4px 16px 0px #5B52F510;
+
+}
+
+
+
+
+/* ========================================
+   WORKFLOW CARD ICON
+======================================== */
+
+.workflow-card-icon {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 16px;
+
+  border-radius: 12px;
+
+  background-color: #ECEAFD;
+}
+
+
+.workflow-card-icon svg {
+  display: block;
+  flex-shrink: 0;
+  overflow: visible;
+}
+
+
+
+/* ========================================
+   WORKFLOW CARD TITLE
+======================================== */
+
+.workflow-card-title {
+  margin: 0;
+
+  color: #343434;
+
+  font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+
+/* ========================================
+   WORKFLOW CARD DESCRIPTION
+======================================== */
+
+.workflow-card-description {
+  margin: 8px 0 0;
+
+  color: #575757;
+
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+/* ========================================
+   WORKFLOW — SM 640px+
+======================================== */
+
+@media (min-width: 640px) {
+
+  .workflow-section {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .workflow-container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .workflow-title {
+    font-size: 38px;
+  }
+
+  .workflow-title-break {
+    display: block;
+  }
+
+  .workflow-description {
+    font-size: 17px;
+    line-height: 1.625;
+  }
+
+  .workflow-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+/* ========================================
+   WORKFLOW — LG 1024px+
+======================================== */
+
+@media (min-width: 1024px) {
+
+  .workflow-container {
+    padding-left: 79px;
+    padding-right: 79px;
+  }
+
+  .workflow-title {
+    font-size: 42px;
+  }
+
+  .workflow-content {
+    grid-template-columns: 280px 1fr;
+    gap: 56px;
+  }
+
+  .workflow-steps {
+    max-width: none;
+
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* ========================================
+   TESTIMONIALS SECTION
+======================================== */
+
+.testimonials-section {
+  background: radial-gradient(231.62% 181.93% at 50.03% 50%, #FFFFFF 0%, rgba(209, 225, 255, 0.78) 100%);
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* ========================================
+   CONTAINER
+======================================== */
+
+.testimonials-container {
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* ========================================
+   SECTION HEADER
+======================================== */
+
+.testimonials-header {
+  width: 100%;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+/* ========================================
+   BADGE
+======================================== */
+
+.testimonials-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 6px 16px;
+
+  border-radius: 999px;
+
+  background-color: #EDEDFC;
+  color: #4C4DDC;
+
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.testimonials-badge-dot {
+  width: 14px;
+  height: 14px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background-color: #4C4DDC;
+}
+
+/* ========================================
+   TITLE
+======================================== */
+
+.testimonials-title {
+  margin: 24px 0 0;
+
+  color: #343434;
+
+  font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+/* ========================================
+   INTRODUCTION
+======================================== */
+
+.testimonials-intro {
+  margin: 20px 0 0;
+
+  color: #444444;
+
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.625;
+}
+
+/* ========================================
+   TESTIMONIAL GRID
+======================================== */
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+/* ========================================
+   TESTIMONIAL CARD
+======================================== */
+
+.testimonials-card {
+  background-color: #ffffff;
+
+  border: 1px solid #f3f4f6;
+  border-radius: 16px;
+
+  padding: 28px;
+
+  box-shadow: 0px 25.77px 54.83px 0px #19486214;
+
+}
+
+/* ========================================
+   STARS
+======================================== */
+
+.testimonials-stars {
+  display: flex;
+  align-items: center;
+
+  gap: 4px;
+
+  margin-bottom: 16px;
+}
+
+.testimonials-stars svg {
+  display: block;
+
+  width: 15px;
+  height: 14px;
+
+  flex-shrink: 0;
+}
+
+/* ========================================
+   TESTIMONIAL TEXT
+======================================== */
+
+.testimonials-text {
+  margin: 0;
+
+  color: #575757;
+
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.625;
+}
+
+/* ========================================
+   AUTHOR
+======================================== */
+
+.testimonials-author {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: 24px;
+}
+
+.testimonials-avatar {
+  width: 40px;
+  height: 40px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+}
+
+.testimonials-author-info {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ========================================
+   AUTHOR NAME
+======================================== */
+
+.testimonials-author-name {
+  margin: 0;
+
+  color: #343434;
+
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* ========================================
+   AUTHOR LOCATION
+======================================== */
+
+.testimonials-author-location {
+  margin: 0;
+
+  color: #A1A1A1;
+
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+/* ========================================
+   SM - 640px+
+======================================== */
+
+@media (min-width: 640px) {
+
+  .testimonials-section {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .testimonials-container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .testimonials-title {
+    font-size: 38px;
+  }
+
+  .testimonials-intro {
+    font-size: 17px;
+  }
+}
+
+/* ========================================
+   MD - 768px+
+======================================== */
+
+@media (min-width: 768px) {
+
+  .testimonials-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* ========================================
+   LG - 1024px+
+======================================== */
+
+@media (min-width: 1024px) {
+
+  .testimonials-container {
+    padding-left: 79px;
+    padding-right: 79px;
+  }
+
+  .testimonials-title {
+    font-size: 42px;
+  }
+}
+
+/* ========================================
+   TESTIMONIALS SECTION END
+======================================== */
+
+
+
+
+
+
+
+
+
+/* ========================================
+   FAQ SECTION
+======================================== */
+
+.faq-section {
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #ffffff;
+}
+
+
+/* ========================================
+   FAQ CONTAINER
+======================================== */
+
+.faq-container {
+  width: 100%;
+  max-width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+/* ========================================
+   FAQ HEADER
+======================================== */
+
+.faq-header {
+  margin-bottom: 56px;
+  text-align: center;
+}
+
+
+/* ========================================
+   FAQ BADGE
+======================================== */
+
+.faq-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 6px 16px;
+
+  border-radius: 999px;
+
+  background-color: #EDEDFC;
+  color: #4C4DDC;
+
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.faq-badge-dot {
+  width: 14px;
+  height: 14px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background-color: #4C4DDC;
+}
+
+
+/* ========================================
+   FAQ TITLE
+======================================== */
+
+.faq-title {
+  margin: 24px 0 0;
+
+  color: #343434;
+
+  font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+
+/* ========================================
+   FAQ LIST
+======================================== */
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+
+/* ========================================
+   FAQ ITEM
+======================================== */
+
+.faq-item {
+  width: 100%;
+
+  padding: 20px;
+
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+
+  background-color: #ffffff;
+
+  box-sizing: border-box;
+}
+
+
+/* First / Open FAQ */
+
+.faq-item[open] {
+  border-color: #ADADEF;
+}
+
+
+/* ========================================
+   FAQ SUMMARY
+======================================== */
+
+.faq-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 16px;
+
+  cursor: pointer;
+
+  list-style: none;
+}
+
+.faq-summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-summary::marker {
+  display: none;
+}
+
+
+/* ========================================
+   FAQ QUESTION
+======================================== */
+
+.faq-question {
+  color: #575757;
+
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.faq-item[open] .faq-question {
+  color: #444444;
+}
+
+
+/* ========================================
+   FAQ ICON
+======================================== */
+
+.faq-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  color: #707070;
+}
+
+.faq-item[open] .faq-icon {
+  color: #444444;
+}
+
+.faq-icon-minus {
+  display: none;
+}
+
+.faq-icon-plus {
+  display: block;
+}
+
+.faq-item[open] .faq-icon-minus {
+  display: block;
+}
+
+.faq-item[open] .faq-icon-plus {
+  display: none;
+}
+
+
+/* ========================================
+   FAQ ANSWER
+======================================== */
+
+.faq-answer {
+  margin: 12px 0 0;
+
+  color: #3E4145;
+
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.625;
+}
+
+
+/* ========================================
+   FAQ CONTACT CARD
+======================================== */
+
+.faq-contact {
+  margin-top: 32px;
+
+  padding: 40px;
+
+  border-radius: 16px;
+
+  background-color: #F8FAFC;
+
+  text-align: center;
+}
+
+
+/* ========================================
+   FAQ AVATARS
+======================================== */
+
+.faq-avatars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 16px;
+}
+
+.faq-avatar {
+  display: block;
+
+  object-fit: cover;
+
+  border: 2px solid #ffffff;
+
+  border-radius: 50%;
+}
+
+.faq-avatar--small {
+  width: 43px;
+  height: 43px;
+}
+
+.faq-avatar--large {
+  position: relative;
+  z-index: 2;
+
+  width: 58px;
+  height: 58px;
+
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+
+/* ========================================
+   FAQ CONTACT TITLE
+======================================== */
+
+.faq-contact-title {
+  margin: 0;
+
+  color: #575757;
+
+  font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+
+/* ========================================
+   FAQ CONTACT DESCRIPTION
+======================================== */
+
+.faq-contact-description {
+  margin: 4px 0 0;
+
+  color: #404348;
+
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+/* ========================================
+   FAQ CONTACT BUTTON
+======================================== */
+
+.faq-contact-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  margin-top: 20px;
+
+  padding: 12px 24px;
+
+  border-radius: 8px;
+
+  background-color: #4C4DDC;
+  color: #ffffff;
+
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.faq-contact-button:hover {
+  background-color: #3B3CC0;
+}
+
+.faq-contact-button i {
+  font-size: 14px;
+}
+
+
+/* ========================================
+   TABLET - 640px+
+======================================== */
+
+@media (min-width: 640px) {
+
+  .faq-section {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .faq-container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .faq-title {
+    font-size: 38px;
+  }
+
+  .faq-item {
+    padding: 24px;
+  }
+}
+
+
+/* ========================================
+   DESKTOP - 1024px+
+======================================== */
+
+@media (min-width: 1024px) {
+
+  .faq-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .faq-title {
+    font-size: 42px;
+  }
+}
+
+
+/* ========================================
+   MOBILE - BELOW 640px
+======================================== */
+
+@media (max-width: 639px) {
+
+  .faq-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .faq-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .faq-header {
+    margin-bottom: 56px;
+  }
+
+  .faq-title {
+    font-size: 30px;
+  }
+
+  .faq-item {
+    padding: 20px;
+  }
+
+  .faq-contact {
+    padding: 40px 24px;
+  }
+}
+
+
+/* ========================================
+   FAQ SECTION END
+======================================== */
+
+
+
+
+
+
+
+/* ========================================
+   CTA SECTION
+======================================== */
+
+.cta-bg {
+  position: relative;
+  overflow: hidden;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #2A2A79;
+}
+
+/* Grid pattern from original internal CSS */
+.cta-grid-pattern {
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.06) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.06) 1px,
+      transparent 1px
+    );
+  background-size: 80.7px 80.7px;
+}
+
+/* ========================================
+   Container
+======================================== */
+
+.cta-container {
+  position: relative;
+  z-index: 10;
+
+  width: 100%;
+  max-width: 1050px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  text-align: center;
+}
+
+/* ========================================
+   Heading
+======================================== */
+
+.cta-title {
+  margin: 0;
+
+  font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.25;
+
+  color: #FFFFFF;
+}
+
+.cta-title-break {
+  display: none;
+}
+
+/* ========================================
+   Description
+======================================== */
+
+.cta-description {
+  max-width: 640px;
+
+  margin: 24px auto 0;
+
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.625;
+
+  color: #EDEDFC;
+}
+
+/* ========================================
+   CTA ACTIONS
+======================================== */
+
+.cta-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 16px;
+
+  margin-top: 36px;
+}
+
+/* ========================================
+   CTA BUTTONS
+======================================== */
+
+.cta-button {
+  width: 100%;
+  height: 51px;
+
+  padding-left: 28px;
+  padding-right: 28px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  border-radius: 8px;
+
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.cta-button svg {
+  flex-shrink: 0;
+}
+
+/* Primary button */
+
+.cta-button--primary {
+  color: #4C4DDC;
+  background-color: #FFFFFF;
+}
+
+.cta-button--primary:hover {
+  background-color: #F3F4F6;
+}
+
+/* Secondary button */
+
+.cta-button--secondary {
+  height: 50px;
+
+  color: #FFFFFF;
+
+  border: 1px solid rgba(255, 255, 255, 0.4);
+
+  background-color: transparent;
+}
+
+.cta-button--secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ========================================
+   REVIEWS
+======================================== */
+
+.cta-reviews {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 16px;
+
+  margin-top: 40px;
+}
+
+.cta-fade-line {
+  flex: 1;
+
+  width: 100%;
+  max-width: 80px;
+
+  height: 1px;
+
+  background: linear-gradient(
+    to right,
+    transparent,
+    #CBD0E6 45%,
+    #CBD0E6 55%,
+    transparent
+  );
+
+  opacity: 0.3;
+}
+
+.cta-review-content {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  font-size: 14px;
+
+  color: #FFFFFF;
+
+  white-space: nowrap;
+}
+
+.cta-stars {
+  display: flex;
+  align-items: center;
+
+  gap: 2px;
+}
+
+.cta-stars svg {
+  width: 13px;
+  height: 12px;
+
+  flex-shrink: 0;
+}
+
+.cta-review-separator {
+  color: #A5B4FC;
+}
+
+/* ========================================
+   APP DOWNLOAD BUTTONS
+======================================== */
+
+.cta-apps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 16px;
+
+  margin-top: 32px;
+}
+
+.cta-app-button {
+  height: 39px;
+
+  padding-left: 16px;
+  padding-right: 16px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+}
+
+.cta-app-button svg {
+  flex-shrink: 0;
+}
+
+.cta-app-button--google {
+  background-color: #FFFFFF;
+  border: 1px solid #9C9C9C;
+}
+
+.cta-app-button--apple {
+  background-color: #000000;
+  border: 1px solid #A6A6A6;
+}
+
+.cta-app-text {
+  text-align: left;
+  line-height: 1.1;
+}
+
+.cta-app-label {
+  display: block;
+
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  font-size: 9px;
+
+  letter-spacing: 0.025em;
+}
+
+.cta-app-name {
+  display: block;
+
+  margin-top: -2px;
+
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.cta-app-button--google .cta-app-label {
+  color: #6B7280;
+}
+
+.cta-app-button--google .cta-app-name {
+  color: #111827;
+}
+
+.cta-app-button--apple .cta-app-label {
+  color: #D1D5DB;
+}
+
+.cta-app-button--apple .cta-app-name {
+  color: #FFFFFF;
+}
+
+/* ========================================
+   RESPONSIVE - SM
+======================================== */
+
+@media (min-width: 640px) {
+
+  .cta-bg {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .cta-container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .cta-title {
+    font-size: 38px;
+    line-height: 1.25;
+  }
+
+  .cta-title-break {
+    display: block;
+  }
+
+  .cta-description {
+    font-size: 17px;
+  }
+
+  .cta-actions {
+    flex-direction: row;
+  }
+
+  .cta-button {
+    width: auto;
+  }
+
+  .cta-fade-line {
+    max-width: 160px;
+  }
+}
+
+/* ========================================
+   RESPONSIVE - LG
+======================================== */
+
+@media (min-width: 1024px) {
+
+  .cta-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .cta-title {
+    font-size: 42px;
+  }
+}
+
+/* CTA SECTION END */
+
+
+
+
+
+
+
+
+/* ========================================
+   FOOTER
+======================================== */
 
 .footer-bg {
   padding: 56px 0;
+
+  background:
+    radial-gradient(
+      120% 140% at 50% 0%,
+      #DBE6FF 0%,
+      #F4F8FF 60%,
+      #FFFFFF 100%
+    );
 }
 
 .footer-container {
   max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 79px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: 79px;
+  padding-right: 79px;
 }
 
 .footer-card {
-  background-color: #ffffff;
-  border-radius: 24px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   padding: 48px;
+
+  background-color: #FFFFFF;
+
+  border-radius: 24px;
+
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.05);
 }
+
+/* ========================================
+   FOOTER GRID
+======================================== */
 
 .footer-grid {
   display: grid;
+
   grid-template-columns: 1.5fr 1fr 1fr;
+
   gap: 40px;
 }
 
-/* ================================
-   Footer Brand
-================================ */
+/* ========================================
+   BRAND
+======================================== */
 
 .footer-brand {
   display: flex;
@@ -38,20 +1788,27 @@
 .footer-logo {
   display: flex;
   align-items: center;
+
   gap: 8px;
+
   margin-bottom: 16px;
+
   text-decoration: none;
 }
 
 .footer-logo-icon {
   width: 32px;
   height: 32px;
-  border-radius: 8px;
-  background-color: #1e7ebb;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   flex-shrink: 0;
+
+  background-color: #4C4DDC;
+
+  border-radius: 8px;
 }
 
 .footer-logo-icon svg {
@@ -60,93 +1817,113 @@
 }
 
 .footer-logo-text {
-  font-family: var(--font-display, sans-serif);
+  font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
   font-size: 17px;
   font-weight: 700;
-  color: #0b132a;
+
+  color: #0B132A;
 }
 
 .footer-logo-highlight {
-  color: #1e7ebb;
+  color: #4C4DDC;
 }
 
 .footer-description {
   max-width: 320px;
+
   margin: 0;
-  color: #575757;
+
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
   font-size: 14px;
   line-height: 1.625;
+
+  color: #575757;
 }
 
-/* ================================
-   Footer Navigation
-================================ */
+/* ========================================
+   FOOTER NAVIGATION
+======================================== */
 
 .footer-column-title {
   margin: 0 0 16px;
-  font-family: var(--font-display, sans-serif);
+
+  font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
   font-size: 16px;
   font-weight: 600;
-  color: #373a3e;
+
+  color: #373A3E;
 }
 
 .footer-links {
-  margin: 0;
-  padding: 0;
-  list-style: none;
   display: flex;
   flex-direction: column;
+
   gap: 12px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .footer-links a {
-  color: #45484d;
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
   font-size: 13px;
+
+  color: #45484D;
+
   text-decoration: none;
+
   transition: color 0.2s ease;
 }
 
 .footer-links a:hover {
-  color: #1e7ebb;
+  color: #1E7EBB;
 }
 
 .footer-links--legal a {
-  color: #1e7ebb;
+  color: #1E7EBB90;
 }
 
 .footer-links--legal a:hover {
   text-decoration: underline;
 }
 
-/* ================================
-   Footer Bottom
-================================ */
+/* ========================================
+   FOOTER BOTTOM
+======================================== */
 
 .footer-bottom {
-  border-top: 1px solid #f3f4f6;
-  margin-top: 40px;
-  padding-top: 24px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   gap: 12px;
 
-  color: #45484d;
+  margin-top: 40px;
+  padding-top: 24px;
+
+  border-top: 1px solid #F3F4F6;
+
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
   font-size: 13px;
+
+  color: #45484D;
 }
 
 .footer-bottom p {
   margin: 0;
 }
 
-/* ================================
-   Responsive
-================================ */
+/* ========================================
+   RESPONSIVE - TABLET
+======================================== */
 
 @media (max-width: 1023px) {
+
   .footer-container {
-    padding: 0 32px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   .footer-card {
@@ -162,22 +1939,30 @@
   }
 }
 
+/* ========================================
+   RESPONSIVE - MOBILE
+======================================== */
+
 @media (max-width: 639px) {
+
   .footer-bg {
     padding: 56px 0;
   }
 
   .footer-container {
-    padding: 0 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .footer-card {
     padding: 32px 24px;
+
     border-radius: 24px;
   }
 
   .footer-grid {
     grid-template-columns: 1fr;
+
     gap: 32px;
   }
 
@@ -187,7 +1972,9 @@
 
   .footer-bottom {
     flex-direction: column;
+
     text-align: center;
   }
 }
-/* FOOTER ENDING  */
+
+/* FOOTER END */

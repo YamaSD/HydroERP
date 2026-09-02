@@ -41,6 +41,12 @@
   font-weight: 800;
   font-style: normal;
 }
+.albert-sans700 {
+  font-family: "Albert Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
 
 .albert-sans600 {
   font-family: "Albert Sans", sans-serif;

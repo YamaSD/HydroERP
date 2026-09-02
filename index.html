@@ -11,6 +11,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
 
+<link rel="stylesheet" href="css/styles.css">
+
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
   tailwind.config = {
@@ -763,45 +765,78 @@
 </section>
 
 <!-- ============ FOOTER ============ -->
-<footer class="footer-bg py-14">
-  <div class="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-[79px]">
-    <div class="bg-white rounded-3xl shadow-sm p-8 sm:p-12">
-      <div class="grid sm:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr] gap-10">
-        <div>
-          <a href="#" class="flex items-center gap-2 mb-4">
-            <span class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-              <svg width="15" height="15" viewBox="87 34 16 17" fill="none"><path d="M95.0006 48.5006V50.0007M95.0006 34.9995V36.4996M98.7509 48.5006V50.0007M98.7509 34.9995V36.4996M87.5 42.5001H89.0001M87.5 46.2504H89.0001M87.5 38.7498H89.0001M101.001 42.5001H102.501M101.001 46.2504H102.501M101.001 38.7498H102.501M91.2503 48.5006V50.0007M91.2503 34.9995V36.4996M90.5002 36.4996H99.501C100.329 36.4996 101.001 37.1713 101.001 37.9998V47.0005C101.001 47.829 100.329 48.5006 99.501 48.5006H90.5002C89.6717 48.5006 89.0001 47.829 89.0001 47.0005V37.9998C89.0001 37.1713 89.6717 36.4996 90.5002 36.4996ZM92.7504 39.4999H97.2508C97.665 39.4999 98.0008 39.8357 98.0008 40.2499V44.7503C98.0008 45.1645 97.665 45.5004 97.2508 45.5004H92.7504C92.3362 45.5004 92.0004 45.1645 92.0004 44.7503V40.2499C92.0004 39.8357 92.3362 39.4999 92.7504 39.4999Z" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+<footer class="footer-bg">
+  <div class="footer-container">
+    <div class="footer-card">
+
+      <div class="footer-grid">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="#" class="footer-logo">
+            <span class="footer-logo-icon">
+              <svg
+                width="15"
+                height="15"
+                viewBox="87 34 16 17"
+                fill="none"
+              >
+                <path
+                  d="M95.0006 48.5006V50.0007M95.0006 34.9995V36.4996M98.7509 48.5006V50.0007M98.7509 34.9995V36.4996M87.5 42.5001H89.0001M87.5 46.2504H89.0001M87.5 38.7498H89.0001M101.001 42.5001H102.501M101.001 46.2504H102.501M101.001 38.7498H102.501M91.2503 48.5006V50.0007M91.2503 34.9995V36.4996M90.5002 36.4996H99.501C100.329 36.4996 101.001 37.1713 101.001 37.9998V47.0005C101.001 47.829 100.329 48.5006 99.501 48.5006H90.5002C89.6717 48.5006 89.0001 47.829 89.0001 47.0005V37.9998C89.0001 37.1713 89.6717 36.4996 90.5002 36.4996ZM92.7504 39.4999H97.2508C97.665 39.4999 98.0008 39.8357 98.0008 40.2499V44.7503C98.0008 45.1645 97.665 45.5004 97.2508 45.5004H92.7504C92.3362 45.5004 92.0004 45.1645 92.0004 44.7503V40.2499C92.0004 39.8357 92.3362 39.4999 92.7504 39.4999Z"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
             </span>
-            <span class="font-display text-[17px] font-bold text-[#0B132A]">Hydro<span class="text-primary">ERP</span></span>
+
+            <span class="footer-logo-text">
+              Hydro<span class="footer-logo-highlight">ERP</span>
+            </span>
           </a>
-          <p class="text-[#575757] text-[14px] max-w-xs leading-relaxed">Hydro ERP is an all-in-one platform designed to simplify and manage hydropower projects, operations, resources, and business processes.</p>
+
+          <p class="footer-description">
+            Hydro ERP is an all-in-one platform designed to simplify and
+            manage hydropower projects, operations, resources, and business
+            processes.
+          </p>
         </div>
-        <div>
-          <h5 class="font-display font-semibold text-[#373A3E] text-[16px] mb-4">Company</h5>
-          <ul class="space-y-3 text-[13px] text-[#45484D]">
-            <li><a href="#" class="hover:text-primary">About Us</a></li>
-            <li><a href="#" class="hover:text-primary">Careers</a></li>
-            <li><a href="#" class="hover:text-primary">Contact</a></li>
-            <li><a href="#" class="hover:text-primary">Blog</a></li>
+
+        <!-- Company -->
+        <div class="footer-column">
+          <h5 class="footer-column-title">Company</h5>
+
+          <ul class="footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blog</a></li>
           </ul>
         </div>
-        <div>
-          <h5 class="font-display font-semibold text-[#373A3E] text-[16px] mb-4">Legal</h5>
-          <ul class="space-y-3 text-[13px]">
-            <li><a href="#" class="text-[#1E7EBB] hover:underline">Privacy Policy</a></li>
-            <li><a href="#" class="text-[#1E7EBB] hover:underline">Terms &amp; Conditions</a></li>
-            <li><a href="#" class="text-[#1E7EBB] hover:underline">Help &amp; Support</a></li>
+
+        <!-- Legal -->
+        <div class="footer-column">
+          <h5 class="footer-column-title">Legal</h5>
+
+          <ul class="footer-links footer-links--legal">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">Help &amp; Support</a></li>
           </ul>
         </div>
+
       </div>
 
-      <div class="border-t border-gray-100 mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-[13px] text-[#45484D]">
+      <!-- Bottom -->
+      <div class="footer-bottom">
         <p>© 2026 Gyanbato All rights reserved.</p>
         <p>Privacy Policy · Terms of Service</p>
       </div>
+
     </div>
   </div>
 </footer>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
 <script>

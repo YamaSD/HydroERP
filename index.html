@@ -25,8 +25,8 @@
           primary: { DEFAULT: '#4C4DDC', dark: '#3B3CC0', darker: '#2A2A79', light: '#EDEDFC' },
         },
         fontFamily: {
-          sans: ['Poppins', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-          body: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          sans: ['Albert Sans', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          body: ['Barlow', 'ui-sans-serif', 'system-ui', 'sans-serif'],
         },
       },
     },
@@ -35,8 +35,8 @@
 
 <style>
   html { scroll-behavior: smooth; }
-  body { font-family: 'Inter', ui-sans-serif, system-ui, sans-serif; color: #444444; }
-  h1, h2, h3, h4, .font-display { font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif; }
+  body, h1{ font-family: 'Albert Sans', ui-sans-serif, system-ui, sans-serif; color: #444444; }
+  p,h2, h3, h4, .font-display { font-family: 'Barlow', ui-sans-serif, system-ui, sans-serif; }
   .icon { display: inline-block; vertical-align: middle; }
 
   /* .grid-pattern-dark {
@@ -139,17 +139,18 @@
   <img src="assets/hero-bg.svg" alt="" class="absolute inset-0 w-full h-full object-cover pointer-events-none select-none" aria-hidden="true">
 
   <div class="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-[79px] pt-14 sm:pt-16 pb-10 md:pb-24 relative">
-    <div class="max-w-[780px] mx-auto text-center relative z-10">
-      <span class="inline-flex items-center gap-1.5 px-3.5 h-[29px] rounded-full border border-primary bg-white text-primary text-[10px] sm:text-[11px] font-bold tracking-wide uppercase">
-        <svg class="icon" width="7" height="12" viewBox="568 154 8 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M574.028 160.518L574.912 165.492C574.922 165.551 574.914 165.611 574.889 165.665C574.863 165.718 574.822 165.763 574.771 165.793C574.72 165.823 574.66 165.836 574.601 165.831C574.542 165.827 574.486 165.804 574.44 165.766L572.351 164.199C572.25 164.123 572.128 164.083 572.002 164.083C571.876 164.083 571.754 164.123 571.653 164.199L569.561 165.766C569.515 165.803 569.459 165.826 569.4 165.831C569.341 165.835 569.282 165.822 569.23 165.792C569.179 165.763 569.138 165.718 569.113 165.664C569.087 165.611 569.079 165.551 569.089 165.492L569.972 160.518M575.5 157.666C575.5 159.599 573.933 161.166 572 161.166C570.067 161.166 568.5 159.599 568.5 157.666C568.5 155.733 570.067 154.166 572 154.166C573.933 154.166 575.5 155.733 575.5 157.666Z" stroke="#4C4DDC" stroke-width="2" stroke-linecap="round"/></svg>
+    <div class="max-w-[780px] mx-auto text-center relative z-10 ">
+      <span class="inline-flex items-center gap-1.5 px-3.5 h-[29px] rounded-full border border-primary bg-[#EDEDFC] text-primary text-[10px] sm:text-[11px] font-bold tracking-wide uppercase">
+        <svg class="icon" width="7" height="12" viewBox="568 154 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M574.028 160.518L574.912 165.492C574.922 165.551 574.914 165.611 574.889 165.665C574.863 165.718 574.822 165.763 574.771 165.793C574.72 165.823 574.66 165.836 574.601 165.831C574.542 165.827 574.486 165.804 574.44 165.766L572.351 164.199C572.25 164.123 572.128 164.083 572.002 164.083C571.876 164.083 571.754 164.123 571.653 164.199L569.561 165.766C569.515 165.803 569.459 165.826 569.4 165.831C569.341 165.835 569.282 165.822 569.23 165.792C569.179 165.763 569.138 165.718 569.113 165.664C569.087 165.611 569.079 165.551 569.089 165.492L569.972 160.518M575.5 157.666C575.5 159.599 573.933 161.166 572 161.166C570.067 161.166 568.5 159.599 568.5 157.666C568.5 155.733 570.067 154.166 572 154.166C573.933 154.166 575.5 155.733 575.5 157.666Z" stroke="#4C4DDC" stroke-width="2" stroke-linecap="round"/></svg>
         Nepal's First Mobile-First Construction ERP
       </span>
-
-      <h1 class="font-display font-bold text-[32px] sm:text-[42px] lg:text-[52px] leading-[1.12] text-[#343434] mt-6 tracking-tight">
+      
+      <h1 class="albert-sans700 text-[32px] sm:text-[46px] lg:text-[56px] leading-[1.12] text-[#343434] mt-6 tracking-tight">
         Build Smarter. <span class="text-primary">Manage Anywhere.</span> Even Offline.
       </h1>
 
-      <p class="mt-6 text-[16px] sm:text-[18px] text-[#444444] leading-relaxed">
+      <p class="mt-6 font-[500] text-[16px] sm:text-[18px] text-[#444444] leading-relaxed">
         HydroERP is Nepal's first mobile-first construction management app that helps field teams capture DPR, track inventory, manage approvals, and sync—anytime, anywhere.
       </p>
 
@@ -202,9 +203,9 @@
 
       <div class="relative heroImg_boxShadow1 w-full rounded rounded-[28px]" style="aspect-ratio: 926 / 434;">
         <!-- stacked-card back layer (3rd/outermost sheet) -->
-        <div class="absolute inset-0 rounded rounded-[28px] shadow-xl bg-[transparent] shadow-primary/10 ring-1 ring-black/5 heroImageBrder heroImg_boxShadow2"></div>
+        <div class="absolute backdrop-blur-sm inset-0 rounded rounded-[28px] shadow-xl bg-[transparent] shadow-primary/10 ring-1 ring-black/5 heroImageBrder heroImg_boxShadow2"></div>
         <!-- stacked-card middle layer (2nd sheet) -->
-        <div class="absolute bg-[transparent] rounded-2xl heroImageBrder shadow-md ring-1 ring-black/5" style="left:3.2%; top:6.9%; width:93.6%; height:93%;"></div>
+        <div class="absolute backdrop-blur-sm rounded-2xl heroImageBrder shadow-md ring-1 ring-black/5" style="left:3.2%; top:6.9%; width:93.6%; height:93%;"></div>
         <!-- front layer: actual dashboard screenshot (1st/top sheet) -->
         <div class="absolute rounded-2xl overflow-hidden ring-1 ring-black/10 shadow-xl bg-white" style="left:6.5%; top:15.4%; width:87%; height:79.3%;">
           <img src="assets/dashboard-web.png" alt="HydroERP operations dashboard" class="w-full h-full object-cover object-top bg-white px-[7px] py-[8px]">

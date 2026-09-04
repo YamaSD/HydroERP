@@ -1910,6 +1910,12 @@
   margin: 0;
 }
 
+.instagram-outline {
+  color: transparent;
+  -webkit-text-stroke: 1px #000;
+}
+
+
 /* ========================================
    RESPONSIVE - TABLET
 ======================================== */

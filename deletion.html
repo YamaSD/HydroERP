@@ -1,10 +1,12 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Terms and Conditions — HydroERP</title>
+  <title>Privacy Policy — HydroERP</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -87,6 +89,508 @@
       color: #444444;
     }
 
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #ffffff;
+            color: #222222;
+            line-height: 1.6;
+        }
+
+        .deletion-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 45px 40px 70px;
+        }
+
+        /* =========================
+           LAST UPDATED
+        ========================= */
+
+        .last-updated {
+            font-size: 13px;
+            color: #444;
+            margin-bottom: 10px;
+        }
+
+        /* =========================
+           MAIN TITLE
+        ========================= */
+
+        h1 {
+            font-size: 28px;
+            line-height: 1.3;
+            font-weight: 700;
+            color: #111;
+            margin-bottom: 16px;
+        }
+
+        /* =========================
+           INTRO
+        ========================= */
+
+        .intro {
+            font-size: 17px;
+            line-height: 1.6;
+            color: #222;
+            margin-bottom: 32px;
+        }
+
+        /* =========================
+           SECTIONS
+        ========================= */
+
+        .section {
+            margin-bottom: 32px;
+        }
+
+        .section h2 {
+            font-size: 19px;
+            line-height: 1.4;
+            font-weight: 700;
+            color: #111;
+            margin-bottom: 14px;
+        }
+
+        .section p {
+            font-size: 17px;
+            line-height: 1.6;
+            color: #222;
+            margin-bottom: 10px;
+        }
+
+        strong {
+            font-weight: 700;
+        }
+
+        /* =========================
+           STEPS
+        ========================= */
+
+        .steps {
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+        }
+
+        .step {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        .step-number {
+            flex: 0 0 38px;
+            width: 38px;
+            height: 38px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+            background: #111;
+            color: #fff;
+
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        .step-content {
+            flex: 1;
+        }
+
+        .step-title {
+            font-size: 17px;
+            line-height: 1.4;
+            font-weight: 700;
+            color: #111;
+            margin-bottom: 4px;
+        }
+
+        .step-description {
+            font-size: 17px;
+            line-height: 1.6;
+            color: #222;
+        }
+
+        /* =========================
+           DATA LIST
+        ========================= */
+
+        .data-list {
+            list-style: none;
+            margin-top: 8px;
+        }
+
+        .data-list li {
+            position: relative;
+
+            font-size: 17px;
+            line-height: 1.6;
+
+            padding-left: 22px;
+            margin-bottom: 7px;
+        }
+
+        .data-list li::before {
+            content: "•";
+
+            position: absolute;
+            left: 4px;
+            top: 0;
+
+            font-size: 18px;
+            font-weight: 700;
+            color: #111;
+        }
+
+        /* =========================
+           DELETION FORM
+        ========================= */
+
+        .deletion-form {
+            margin-top: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 22px;
+        }
+
+        .form-label {
+            display: block;
+
+            font-size: 17px;
+            font-weight: 700;
+            color: #111;
+
+            margin-bottom: 8px;
+        }
+
+        .form-input,
+        .form-textarea {
+            width: 100%;
+
+            border: 1px solid #bdbdbd;
+            border-radius: 6px;
+
+            background: #fff;
+            color: #222;
+
+            font-family: inherit;
+            font-size: 16px;
+
+            outline: none;
+
+            padding: 13px 14px;
+
+            transition:
+                border-color 0.2s ease,
+                box-shadow 0.2s ease;
+        }
+
+        .form-input {
+            height: 50px;
+        }
+
+        .form-textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .form-input:focus,
+        .form-textarea:focus {
+            border-color: #555;
+
+            box-shadow:
+                0 0 0 3px rgba(0, 0, 0, 0.06);
+        }
+
+        .form-input::placeholder,
+        .form-textarea::placeholder {
+            color: #888;
+        }
+
+        /* =========================
+           CONFIRMATION
+        ========================= */
+
+        .confirmation {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+
+            margin: 8px 0 22px;
+        }
+
+        .confirmation input {
+            flex: 0 0 auto;
+
+            width: 18px;
+            height: 18px;
+
+            margin-top: 4px;
+
+            cursor: pointer;
+        }
+
+        .confirmation label {
+            font-size: 15px;
+            line-height: 1.5;
+            color: #333;
+
+            cursor: pointer;
+        }
+
+        /* =========================
+           DELETE BUTTON
+        ========================= */
+
+        .delete-button {
+            width: 100%;
+
+            border: none;
+            border-radius: 6px;
+
+            background: #d32f2f;
+            color: #fff;
+
+            padding: 15px 20px;
+
+            font-family: inherit;
+            font-size: 16px;
+            font-weight: 700;
+
+            cursor: pointer;
+
+            transition:
+                background 0.2s ease,
+                transform 0.1s ease;
+        }
+
+        .delete-button:hover {
+            background: #b71c1c;
+        }
+
+        .delete-button:active {
+            transform: scale(0.99);
+        }
+
+        .delete-button:disabled {
+            opacity: 0.55;
+            cursor: not-allowed;
+        }
+
+        /* =========================
+           SMALL NOTE
+        ========================= */
+
+        .form-note {
+            margin-top: 12px;
+
+            font-size: 13px;
+            line-height: 1.5;
+
+            color: #666;
+            text-align: center;
+        }
+
+
+        /* =========================
+           TABLET
+        ========================= */
+
+        @media (max-width: 899px) {
+
+            .deletion-container {
+                max-width: 760px;
+                padding: 38px 35px 60px;
+            }
+
+            .last-updated {
+                font-size: 12px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            .intro {
+                font-size: 16px;
+            }
+
+            .section h2 {
+                font-size: 18px;
+            }
+
+            .section p,
+            .step-title,
+            .step-description,
+            .data-list li,
+            .form-label {
+                font-size: 16px;
+            }
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 599px) {
+
+            .deletion-container {
+                width: 100%;
+                padding: 28px 20px 45px;
+            }
+
+            .last-updated {
+                font-size: 11px;
+                margin-bottom: 8px;
+            }
+
+            h1 {
+                font-size: 23px;
+                margin-bottom: 13px;
+            }
+
+            .intro {
+                font-size: 13px;
+                line-height: 1.6;
+                margin-bottom: 27px;
+            }
+
+            .section {
+                margin-bottom: 27px;
+            }
+
+            .section h2 {
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+
+            .section p,
+            .step-title,
+            .step-description,
+            .data-list li {
+                font-size: 13px;
+                line-height: 1.6;
+            }
+
+            /* Steps */
+
+            .steps {
+                gap: 20px;
+            }
+
+            .step {
+                gap: 12px;
+            }
+
+            .step-number {
+                flex: 0 0 32px;
+
+                width: 32px;
+                height: 32px;
+
+                font-size: 13px;
+            }
+
+            /* Form */
+
+            .form-label {
+                font-size: 13px;
+                margin-bottom: 7px;
+            }
+
+            .form-group {
+                margin-bottom: 18px;
+            }
+
+            .form-input,
+            .form-textarea {
+                font-size: 14px;
+                padding: 11px 12px;
+            }
+
+            .form-input {
+                height: 46px;
+            }
+
+            .form-textarea {
+                min-height: 110px;
+            }
+
+            .confirmation {
+                gap: 8px;
+            }
+
+            .confirmation input {
+                width: 17px;
+                height: 17px;
+            }
+
+            .confirmation label {
+                font-size: 12px;
+            }
+
+            .delete-button {
+                font-size: 14px;
+                padding: 14px 16px;
+            }
+
+            .form-note {
+                font-size: 11px;
+            }
+        }
+
+
+        /* =========================
+           SMALL MOBILE
+        ========================= */
+
+        @media (max-width: 380px) {
+
+            .deletion-container {
+                padding: 24px 18px 40px;
+            }
+
+            .last-updated {
+                font-size: 10px;
+            }
+
+            h1 {
+                font-size: 21px;
+            }
+
+            .intro {
+                font-size: 12px;
+            }
+
+            .section h2 {
+                font-size: 15px;
+            }
+
+            .section p,
+            .step-title,
+            .step-description,
+            .data-list li {
+                font-size: 12px;
+            }
+
+            .step-number {
+                flex-basis: 30px;
+                width: 30px;
+                height: 30px;
+            }
+        }
+  
     p,
     h2,
     h3,
@@ -162,185 +666,6 @@
       background-color: #4C4DDC;
     }
 
-
-
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #ffffff;
-            color: #222222;
-            line-height: 1.6;
-        }
-
-        .terms-container {
-            width: 100%;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 45px 40px 70px;
-        }
-
-        .last-updated {
-            font-size: 13px;
-            color: #444;
-            margin-bottom: 10px;
-        }
-
-        h1 {
-            font-size: 28px;
-            line-height: 1.3;
-            font-weight: 700;
-            color: #111;
-            margin-bottom: 16px;
-        }
-
-        .intro {
-            font-size: 17px;
-            line-height: 1.6;
-            color: #222;
-            margin-bottom: 30px;
-        }
-
-        .section {
-            margin-bottom: 30px;
-        }
-
-        .section h2 {
-            font-size: 19px;
-            line-height: 1.4;
-            font-weight: 700;
-            color: #111;
-            margin-bottom: 10px;
-        }
-
-        .section p {
-            font-size: 17px;
-            line-height: 1.6;
-            color: #222;
-            margin-bottom: 10px;
-        }
-
-        strong {
-            font-weight: 700;
-        }
-
-        a {
-            color: #0000ee;
-            text-decoration: underline;
-            word-break: break-word;
-        }
-
-        /* =========================
-           TABLET
-        ========================= */
-
-        @media (max-width: 899px) {
-
-            .terms-container {
-                max-width: 760px;
-                padding: 38px 35px 60px;
-            }
-
-            .last-updated {
-                font-size: 12px;
-            }
-
-            h1 {
-                font-size: 26px;
-            }
-
-            .intro {
-                font-size: 16px;
-            }
-
-            .section h2 {
-                font-size: 18px;
-            }
-
-            .section p {
-                font-size: 16px;
-            }
-        }
-
-
-        /* =========================
-           MOBILE
-        ========================= */
-
-        @media (max-width: 599px) {
-
-            .terms-container {
-                width: 100%;
-                padding: 28px 20px 45px;
-            }
-
-            .last-updated {
-                font-size: 11px;
-                margin-bottom: 8px;
-            }
-
-            h1 {
-                font-size: 23px;
-                margin-bottom: 13px;
-            }
-
-            .intro {
-                font-size: 13px;
-                line-height: 1.6;
-                margin-bottom: 25px;
-            }
-
-            .section {
-                margin-bottom: 24px;
-            }
-
-            .section h2 {
-                font-size: 16px;
-                margin-bottom: 8px;
-            }
-
-            .section p {
-                font-size: 13px;
-                line-height: 1.6;
-            }
-        }
-
-
-        /* =========================
-           SMALL MOBILE
-        ========================= */
-
-        @media (max-width: 380px) {
-
-            .terms-container {
-                padding: 24px 18px 40px;
-            }
-
-            .last-updated {
-                font-size: 10px;
-            }
-
-            h1 {
-                font-size: 21px;
-            }
-
-            .intro,
-            .section p {
-                font-size: 12px;
-            }
-
-            .section h2 {
-                font-size: 15px;
-            }
-
-            .section {
-                margin-bottom: 21px;
-            }
-        }
- 
-
-   
-
-
   </style>
 </head>
 
@@ -354,7 +679,7 @@
       <div class="flex items-center justify-between h-[85px]">
 
         <!-- Logo -->
-        <a href="/" class="flex items-center gap-2 shrink-0">
+        <a href="index.html" class="flex items-center gap-2 shrink-0">
 
           <span class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
 
@@ -560,183 +885,270 @@
 
   </header>
 
+    <main class="deletion-container">
 
-  <!-- ==================== TERMS AND CONDITIONS ==================== -->
-    <main class="terms-container">
-
+        <!-- Last Updated -->
         <div class="last-updated">
             Last updated: April 30, 2026
         </div>
 
-        <h1>Terms &amp; Conditions</h1>
 
+        <!-- Title -->
+        <h1>
+            Account Deletion &amp; Data Removal
+        </h1>
+
+
+        <!-- Introduction -->
         <p class="intro">
-            These Terms govern use of Service
-            registration and sign-in; institute exams and mock tests;
-            objective and subjective questions; teacher grading and
-            published results; scores, analytics, and leaderboards;
-            question upload and AI-assisted tools. By using the Service,
-            you agree to these Terms.
+            Learn how to delete your account and request the
+            removal of all associated personal data in compliance with
+            Google Play Store policies.
         </p>
 
 
-        <!-- 1. Roles and responsibilities -->
+        <!-- =========================
+             STEPS
+        ========================== -->
+
         <section class="section">
 
-            <h2>1. Roles and responsibilities</h2>
+            <h2>
+                Steps to Request Deletion
+            </h2>
 
-            <p>
-                <strong>Students:</strong>
-                accurate account information; honest exam conduct;
-                protect credentials; subjective results may be delayed;
-                scores are informational only for official qualifications.
-            </p>
+            <div class="steps">
 
-            <p>
-                <strong>Teachers/evaluators:</strong>
-                lawful use per institute policy; protect student data;
-                fair grading; no misuse of access to grades or leaderboards.
-            </p>
+                <!-- Step 1 -->
+                <div class="step">
 
-            <p>
-                <strong>Institutes:</strong>
-                authority to register users and process their data;
-                inform users of relevant rules; control who sees results
-                and exports; comply with applicable laws.
-            </p>
+                    <div class="step-number">
+                        1
+                    </div>
 
-            <p>
-                You must meet age or authorization requirements in your
-                region. Institute-specific rules may apply in addition
-                to these Terms.
-            </p>
+                    <div class="step-content">
+
+                        <div class="step-title">
+                            Submit Deletion Request
+                        </div>
+
+                        <div class="step-description">
+                            Fill out the request form below with your
+                            registered email and details. You can request
+                            deletion even if you have already uninstalled
+                            the application.
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Step 2 -->
+                <div class="step">
+
+                    <div class="step-number">
+                        2
+                    </div>
+
+                    <div class="step-content">
+
+                        <div class="step-title">
+                            Verification &amp; Confirmation
+                        </div>
+
+                        <div class="step-description">
+                            Our support team will verify your registered
+                            user profile and email ownership to prevent
+                            unauthorized deletion.
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Step 3 -->
+                <div class="step">
+
+                    <div class="step-number">
+                        3
+                    </div>
+
+                    <div class="step-content">
+
+                        <div class="step-title">
+                            Permanent Data Erasure
+                        </div>
+
+                        <div class="step-description">
+                            Once verified, all your account records and
+                            personal data will be permanently deleted
+                            from our active servers within 7-14 business
+                            days.
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </section>
 
 
-        <!-- 2. Accounts and acceptable use -->
+        <!-- =========================
+             DATA REMOVAL
+        ========================== -->
+
         <section class="section">
 
-            <h2>2. Accounts and acceptable use</h2>
+            <h2>
+                What Data Will Be Permanently Removed?
+            </h2>
 
             <p>
-                You are responsible for activity on your account.
-                Report suspected unauthorized access to
-                <a href="mailto:aayusoft@outlook.com">
-                    aayusoft@outlook.com
-                </a>.
-                You may not disrupt the Service, cheat, scrape without
-                permission, upload unlawful or infringing content, or
-                access others’ accounts or data.
+                Upon processing your request, the following information
+                is permanently erased and cannot be recovered:
             </p>
+
+            <ul class="data-list">
+
+                <li>
+                    Account Profile (Name, Email, Role)
+                </li>
+
+                <li>
+                    Registered Exam Entries
+                </li>
+
+                <li>
+                    Practice Test &amp; Quiz Histories
+                </li>
+
+                <li>
+                    Submitted Answers &amp; Submissions
+                </li>
+
+                <li>
+                    Earned Marks &amp; Published Results
+                </li>
+
+                <li>
+                    Device tokens &amp; Refresh keys
+                </li>
+
+            </ul>
 
         </section>
 
 
-        <!-- 3. License and content -->
+        <!-- =========================
+             DELETION FORM
+        ========================== -->
+
         <section class="section">
 
-            <h2>3. License and content</h2>
+            <h2>
+                Submit Deletion Request
+            </h2>
 
             <p>
-                We grant a limited, revocable license to use the Service
-                for its intended educational purpose. Our software and
-                branding remain ours. You grant us a license to host and
-                process content you submit as needed to operate the Service.
-                <strong>AI-assisted content may be inaccurate—you must
-                review it.</strong>
-                See our
-                <a
-                    href="https://gyanbato.com/Home/Privacy"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                Please provide the registered details below to initiate
+                deletion. No login is required.
+            </p>
+
+
+            <form
+                class="deletion-form"
+                action="#"
+                method="POST"
+            >
+
+                <!-- Email -->
+                <div class="form-group">
+
+                    <label
+                        class="form-label"
+                        for="email"
+                    >
+                        Registered Email Address
+                    </label>
+
+                    <input
+                        class="form-input"
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your registered email"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Reason -->
+                <div class="form-group">
+
+                    <label
+                        class="form-label"
+                        for="reason"
+                    >
+                        Reason for Account Deletion
+                    </label>
+
+                    <textarea
+                        class="form-textarea"
+                        id="reason"
+                        name="reason"
+                        placeholder="Please tell us why you want to delete your account"
+                    ></textarea>
+
+                </div>
+
+
+                <!-- Confirmation -->
+                <div class="confirmation">
+
+                    <input
+                        type="checkbox"
+                        id="confirmation"
+                        name="confirmation"
+                        required
+                    >
+
+                    <label for="confirmation">
+                        I understand that account deletion is permanent
+                        and irreversible. I request the permanent removal
+                        of my account profile, exam logs, practice history,
+                        and all associated personal data from this app.
+                    </label>
+
+                </div>
+
+
+                <!-- Delete Button -->
+                <button
+                    type="submit"
+                    class="delete-button"
                 >
-                    Privacy Policy
-                </a>
-                for data practices.
-            </p>
+                    Permanently Delete My Account &amp; Data
+                </button>
 
-        </section>
+                <div class="form-note">
+                    Your request will be reviewed and verified before
+                    permanent deletion.
+                </div>
 
-
-        <!-- 4. Exams and results -->
-        <section class="section">
-
-            <h2>4. Exams and results</h2>
-
-            <p>
-                Objective scoring may be automated; subjective scoring
-                depends on authorized evaluators. We do not guarantee
-                instant results. Grade disputes are mainly between you
-                and your institute, except for verifiable technical
-                errors on our side.
-            </p>
-
-        </section>
-
-
-        <!-- 5. Third parties -->
-        <section class="section">
-
-            <h2>5. Third parties</h2>
-
-            <p>
-                Sign-in, app stores, payments, hosting, analytics, and
-                AI providers have their own terms and policies.
-            </p>
-
-        </section>
-
-
-        <!-- 6. Disclaimers and liability -->
-        <section class="section">
-
-            <h2>6. Disclaimers and liability</h2>
-
-            <p>
-                The Service is “as is” / “as available.” We disclaim
-                warranties to the extent allowed by law. We are not
-                liable for indirect or consequential damages. Total
-                liability is limited to fees you paid us in the 12 months
-                before a claim (or a small fixed amount) where the law allows.
-            </p>
-
-        </section>
-
-
-        <!-- 7. Indemnity, termination, changes -->
-        <section class="section">
-
-            <h2>7. Indemnity, termination, changes</h2>
-
-            <p>
-                You indemnify us for misuse or breach of these Terms to
-                the extent permitted by law. We may suspend or terminate
-                access for violations or legal reasons. We may update
-                these Terms; continued use may mean acceptance where
-                the law allows.
-            </p>
-
-        </section>
-
-
-        <!-- 8. Law and contact -->
-        <section class="section">
-
-            <h2>8. Law and contact</h2>
-
-            <p>
-                Governing law follows the operator’s jurisdiction except
-                where mandatory consumer laws in your country apply.
-                Questions:
-                <a href="mailto:aayusoft@outlook.com">
-                    aayusoft@outlook.com
-                </a>.
-            </p>
+            </form>
 
         </section>
 
     </main>
+
+
+
 
   <!-- ==================== FOOTER ==================== -->
   <footer class="footer-bg">
@@ -750,7 +1162,7 @@
           <!-- Brand -->
           <div class="footer-brand">
 
-            <a href="index.html" class="footer-logo">
+            <a href="index.html" class="footer-logo"></a>
 
               <span class="footer-logo-icon">
 
@@ -784,7 +1196,7 @@
               processes.
             </p>
 
-                <!-- Social Icons -->
+            <!-- Social Icons -->
 <div class="flex items-center gap-2 mt-4 ml-2">
 
   <!-- X -->
@@ -824,8 +1236,6 @@
   </a>
 
 </div>
-
-
 
           </div>
 
@@ -870,11 +1280,11 @@
             <ul class="footer-links footer-links--legal barlow-regular">
 
               <li>
-                <a href="privacy.html">Privacy Policy</a>
+                <a href="#">Privacy Policy</a>
               </li>
 
               <li>
-                <a href="#">Terms &amp; Conditions</a>
+                <a href="terms.html">Terms &amp; Conditions</a>
               </li>
 
               <li>

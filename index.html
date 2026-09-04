@@ -136,7 +136,7 @@
 
 <!-- ============ HERO ============ -->
 <section class="relative overflow-x-clip">
-  <img src="assets/hero-bg.svg" alt="" class="absolute inset-0 w-full h-full object-cover pointer-events-none select-none" aria-hidden="true">
+  <img src="assets/hero-bg.svg" alt="" class="absolute inset-0 w-full h-full object-none pointer-events-none select-none" aria-hidden="true">
 
   <div class="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-[79px] pt-14 sm:pt-16 pb-10 md:pb-24 relative">
     <div class="max-w-[780px] mx-auto text-center relative z-10 ">
@@ -226,7 +226,7 @@
       </div>
 
       <!-- connector from phone to the Quick DPR Entry card, precisely anchored between the two -->
-      <span class="hidden md:block absolute pointer-events-none select-none z-30 border-l-[1.5px] border-dashed" style="left: 97%; top: 98.6%; height: 4.6%; border-color: #A5A6F0;" aria-hidden="true"></span>
+      <span class="hidden md:block absolute pointer-events-none select-none z-30" style="left: 97%; top: 98.6%; height: 4.6%; border-color: #A5A6F0;" aria-hidden="true"></span>
        <img src="assets/rightBottomLine.png" alt="" class="hidden xl:block absolute w-[110px] h-[231px] pointer-events-none select-none z-30" style="left: 106.26%; bottom: -11.5%;" aria-hidden="true">
       <img src="assets/card-quick-dpr.svg" alt="Quick DPR Entry — Capture daily progress in 2 mins" class="hidden md:block absolute w-[220px] h-[auto] pointer-events-none select-none z-30" style="left: calc(91.47% - 2px); top: calc(103.23% - 16px);">
     </div>
@@ -415,8 +415,8 @@
       </button>
 
       <div class="bg-gradient-to-b from-[#4C4DDC]/[0.06] to-white rounded-[2rem] p-4 sm:p-10 border border-gray-100 shadow-sm">
-        <div class="swiper tour-swiper max-w-[300px] mx-auto rounded-2xl overflow-hidden shadow-xl ring-1 ring-black/5">
-          <div class="swiper-wrapper">
+        <div class="swiper tour-swiper max-w-[300px] mx-auto rounded-2xl overflow-hidden shadow-xl ring-5 sm:ring-[7px] ring-gray-900">
+          <div class="swiper-wrapper ">
             <div class="swiper-slide" data-title="1. Mobile Dashboard" data-desc="Field teams get quick actions, today's DPR entries, tasks and approval requests — all built mobile-first for the site.">
               <img src="assets/dashboard-mobile-full.png" alt="HydroERP mobile dashboard" class="w-full h-auto block">
             </div>
@@ -1284,27 +1284,28 @@
 
 <!-- ============ CTA ============ -->
 <section class="cta-bg cta-grid-pattern">
-  <div class="cta-container">
+  <div class="cta-container backdrop-blur-xl">
 
-    <h2 class="cta-title albert-sans600">
+    <h2 class="cta-title backdrop-blur-sm albert-sans600">
       Turn Complex Operation into
       <br class="cta-title-break">
       Simple Workflows.
     </h2>
 
-    <p class="cta-description barlow-medium">
+    <p class="cta-description backdrop-blur-sm barlow-medium">
       Bring your projects, teams, and operations together in one powerful platform built to help you work smarter and deliver better results.
     </p>
 
-    <div class="cta-actions albert-sans600">
+    <div class="cta-actions backdrop-blur-sm albert-sans600">
 
-      <a href="#" class="cta-button cta-button--primary">
+      <a href="#" class="cta-button cta-button--primary backdrop-blur-sm">
         Start Free Trial
 
         <svg
           width="9"
           height="9"
           viewBox="674 473 10 11"
+          class="overflow-visible"
         >
           <path
             d="M674.332 478.5H683.666M678.999 483.167L683.666 478.5L678.999 473.833"
@@ -1316,13 +1317,14 @@
         </svg>
       </a>
 
-      <a href="#" class="cta-button cta-button--secondary">
+      <a href="#" class="cta-button cta-button--secondary backdrop-blur-sm">
         Book a Demo
 
         <svg
           width="4"
           height="8"
           viewBox="869 474 5 9"
+          class="overflow-visible"
         >
           <path
             d="M870 482.5L874 478.5L870 474.5"
@@ -1336,7 +1338,7 @@
 
     </div>
 
-    <div class="cta-reviews">
+    <div class="cta-reviews backdrop-blur-sm">
 
       <span class="cta-fade-line"></span>
 
@@ -1457,7 +1459,7 @@
       <!-- Bottom -->
       <div class="footer-bottom barlow-regular">
         <p>© 2026 Gyanbato All rights reserved.</p>
-        <p>Privacy Policy · Terms of Service</p>
+        <p>aayusoft@outlook.com · +977 980-8999983</p>
       </div>
 
     </div>

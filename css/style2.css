@@ -3,7 +3,7 @@
         box-shadow: 0px 4px 32.3px 21px #00000014;
 }
 .heroImg_boxShadow2{
-        box-shadow: 0px 4px 32.3px 21px #00000014;
+        box-shadow: 0px 4px 32.3px 19px #0000000A;
 }
 .heroImageBrder{
             border: 3px solid white;
@@ -100,7 +100,6 @@ img {
     user-select: none !important;
     -webkit-user-select: none !important;
     -webkit-user-drag: none !important;
-    user-drag: none !important;
 }
 .barlow-semibold {
   font-family: "Barlow", sans-serif;

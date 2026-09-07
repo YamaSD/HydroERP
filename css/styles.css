@@ -1,3 +1,97 @@
+
+/* MARQUEE */
+
+/* Marquee viewport */
+    .marquee {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Moving track */
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      will-change: transform;
+    }
+
+    /* Each item */
+    .marquee-item {
+      flex: 0 0 auto;
+
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      padding: 15px 30px;
+    }
+
+    .marquee-item img {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+      display: block;
+    }
+
+    .marquee-item span {
+      white-space: nowrap;
+      font-size: 18px;
+    }
+
+    /* Pause when hovering */
+    .marquee:hover .marquee-track {
+      animation-play-state: paused;
+    }
+
+    /*
+      Animation duration is adjusted using JS
+      based on the actual content width.
+    */
+    @keyframes marquee {
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(calc(-1 * var(--marquee-width)));
+      }
+    }
+
+    /* Tablet */
+    @media (max-width: 768px) {
+      .marquee-item {
+        padding: 12px 20px;
+        gap: 8px;
+      }
+
+      .marquee-item img {
+        width: 40px;
+        height: 40px;
+      }
+
+      .marquee-item span {
+        font-size: 16px;
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 480px) {
+      .marquee-item {
+        padding: 10px 15px;
+      }
+
+      .marquee-item img {
+        width: 32px;
+        height: 32px;
+      }
+
+      .marquee-item span {
+        font-size: 14px;
+      }
+    }
+
+
+
 /* =========================================================
    PLATFORM MODULES
    ========================================================= */

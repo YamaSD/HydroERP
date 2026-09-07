@@ -249,7 +249,11 @@
       <span class="fade-line flex-1 max-w-[40px] sm:max-w-[220px] shrink-0 heroRightLine"></span>
     </div>
 
-    <div class="flex flex-wrap items-center justify-center gap-x-10 gap-y-6">
+      <div class="marquee" id="marquee">
+    <div class="marquee-track" id="marqueeTrack"></div>
+  </div>
+
+    <!-- <div class="flex flex-wrap items-center justify-center gap-x-10 gap-y-6">
       <span class="grayscale-hover inline-flex items-center gap-2.5 text-[#707070] font-semibold text-[14px]">
         <svg class="icon" width="15" height="14" viewBox="187 1363 16 15"><path d="M198.001 1377V1365C198.001 1364.6 197.843 1364.22 197.561 1363.94C197.28 1363.66 196.899 1363.5 196.501 1363.5H193.5C193.103 1363.5 192.721 1363.66 192.44 1363.94C192.158 1364.22 192 1364.6 192 1365V1377M189 1366.5H201.001C201.83 1366.5 202.501 1367.17 202.501 1368V1375.5C202.501 1376.33 201.83 1377 201.001 1377H189C188.172 1377 187.5 1376.33 187.5 1375.5V1368C187.5 1367.17 188.172 1366.5 189 1366.5Z" stroke="#575757" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
         High Himalaya Construction</span>
@@ -265,7 +269,7 @@
       <span class="grayscale-hover inline-flex items-center gap-2.5 text-[#707070] font-semibold text-[14px]">
         <svg class="icon" width="15" height="14" viewBox="187 1363 16 15"><path d="M198.001 1377V1365C198.001 1364.6 197.843 1364.22 197.561 1363.94C197.28 1363.66 196.899 1363.5 196.501 1363.5H193.5C193.103 1363.5 192.721 1363.66 192.44 1363.94C192.158 1364.22 192 1364.6 192 1365V1377M189 1366.5H201.001C201.83 1366.5 202.501 1367.17 202.501 1368V1375.5C202.501 1376.33 201.83 1377 201.001 1377H189C188.172 1377 187.5 1376.33 187.5 1375.5V1368C187.5 1367.17 188.172 1366.5 189 1366.5Z" stroke="#575757" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
         Pashupati Builders</span>
-    </div>
+    </div> -->
   </div>
 </section>
 
@@ -373,11 +377,11 @@
 
       <div class="">
         <div class="swiper tour-swiper rounded-2xl overflow-hidden">
-          <div class="swiper-wrapper  max-h-[554px]">
+          <div class="swiper-wrapper  max-h-[612px]">
             <div class="swiper-slide" data-title="1. Dashboard" data-desc="Get a real-time overview of site weather, incidents, inspections and approvals — everything your team needs at a glance.">
               <div class="p-[15px] bg-white rounded-[15px]">
                 
-                <img src="assets/dashboard2 (1).webp" alt="HydroERP operations dashboard" class="w-full h-auto block">
+                <img src="assets/main_dashboard1.webp" alt="HydroERP operations dashboard" class="w-full h-auto block">
               </div>
             </div>
             <div class="swiper-slide" data-title="2. Project Operations" data-desc="Keep project activities organized and visible. Manage projects, sites, activities and operational information from a centralized platform.">
@@ -1607,6 +1611,136 @@
       });
     });
   })();
+
+  // Marquee
+  const marquee = [
+    {
+      logo: "assets/client_logo/h3_c.png",
+      name: "High Himalaya Construction"
+    },
+    {
+      logo: "assets/client_logo/aayu_group.png",
+      name: "Aayu Group of companies"
+    },
+    {
+      logo: "assets/client_logo/aayu_group.png",
+      name: "Himalayan Builders"
+    },
+    {
+      logo: "assets/client_logo/aayu_group.png",
+      name: "Pashupati Builders"
+    }
+  ];
+
+  const marqueeContainer = document.getElementById("marquee");
+  const track = document.getElementById("marqueeTrack");
+
+  const speed = 100; // pixels per second
+
+
+  function createItem(item) {
+    const element = document.createElement("div");
+
+    element.className = "marquee-item";
+
+    element.innerHTML = `
+      <img src="${item.logo}" alt="${item.name}">
+      <span>${item.name}</span>
+    `;
+
+    return element;
+  }
+
+
+  function setupMarquee() {
+    track.innerHTML = "";
+
+    /*
+      First create ONE complete set.
+    */
+    marquee.forEach(item => {
+      track.appendChild(createItem(item));
+    });
+
+    const singleSetWidth = track.scrollWidth;
+
+
+    /*
+      We need enough copies to completely cover
+      the viewport even on very large screens.
+    */
+    const requiredWidth = marqueeContainer.offsetWidth * 2;
+
+
+    let totalWidth = singleSetWidth;
+
+
+    /*
+      Keep adding copies until the track is
+      sufficiently wide.
+    */
+    while (totalWidth < requiredWidth) {
+      marquee.forEach(item => {
+        track.appendChild(createItem(item));
+      });
+
+      totalWidth = track.scrollWidth;
+    }
+
+
+    /*
+      Now duplicate the original set one more time.
+
+      This guarantees that when the first set
+      disappears, another identical set is already
+      visible.
+    */
+    marquee.forEach(item => {
+      track.appendChild(createItem(item));
+    });
+
+
+    /*
+      IMPORTANT:
+      We only animate by the width of ONE original
+      set, not the entire track.
+    */
+    track.style.setProperty(
+      "--marquee-width",
+      `${singleSetWidth}px`
+    );
+
+
+    /*
+      Calculate duration based on actual width.
+    */
+    const duration = singleSetWidth / speed;
+
+
+    /*
+      Restart animation.
+    */
+    track.style.animation = "none";
+
+    track.offsetHeight;
+
+    track.style.animation =
+      `marquee ${duration}s linear infinite`;
+  }
+
+
+  window.addEventListener("load", setupMarquee);
+
+
+  let resizeTimer;
+
+  window.addEventListener("resize", () => {
+    clearTimeout(resizeTimer);
+
+    resizeTimer = setTimeout(() => {
+      setupMarquee();
+    }, 150);
+  });
 </script>
 
 </body>

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      background: #f4f7fb;
+      color: #1f2937;
+    }
+
+    .form-container {
+      width: 100%;
+      max-width: 520px;
+      background: #ffffff;
+      padding: 35px;
+      border-radius: 16px;
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+    }
+
+    .form-header {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    .form-header h1 {
+      font-size: 28px;
+      margin-bottom: 8px;
+      color: #111827;
+    }
+
+    .form-header p {
+      font-size: 14px;
+      color: #6b7280;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #374151;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 13px 14px;
+      border: 1px solid #d1d5db;
+      border-radius: 9px;
+      font-size: 15px;
+      font-family: inherit;
+      outline: none;
+      transition: 0.2s ease;
+      background: #fff;
+    }
+
+    .form-group input {
+      height: 48px;
+    }
+
+    .form-group textarea {
+      min-height: 130px;
+      resize: vertical;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: #2563eb;
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    }
+
+    .send-btn {
+      width: 100%;
+      height: 50px;
+      border: none;
+      border-radius: 9px;
+      background: #2563eb;
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    .send-btn:hover {
+      background: #1d4ed8;
+    }
+
+    .send-btn:active {
+      transform: scale(0.98);
+    }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+      body {
+        padding: 15px;
+      }
+
+      .form-container {
+        padding: 25px 20px;
+        border-radius: 12px;
+      }
+
+      .form-header h1 {
+        font-size: 24px;
+      }
+    }
+     html { scroll-behavior: smooth; }
+  body, h1{ font-family: 'Albert Sans', ui-sans-serif, system-ui, sans-serif; color: #444444; }
+  p,h2, h3, h4, .font-display { font-family: 'Barlow', ui-sans-serif, system-ui, sans-serif; }
+  .icon { display: inline-block; vertical-align: middle; }
+
+  /* .grid-pattern-dark {
+    background-image:
+      linear-gradient(to right, rgba(255,255,255,0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,0.06) 1px, transparent 1px);
+    background-size: 80.7px 80.7px;
+  } */
+  .section-tint { background: #F4F8FF; }
+  /* .cta-bg { background-color: #2A2A79; } */
+  /* .footer-bg { background: radial-gradient(120% 140% at 50% 0%, #dbe6ff 0%, #f4f8ff 60%, #ffffff 100%); } */
+  .fade-line { background: linear-gradient(to right, transparent, #cbd0e6 45%, #cbd0e6 55%, transparent); height: 1px; }
+
+  /* details > summary { list-style: none; cursor: pointer; }
+  details > summary::-webkit-details-marker { display: none; } */
+  /* details[open] .accordion-icon-plus { display: none; }
+  details:not([open]) .accordion-icon-minus { display: none; } */
+
+  .tour-tab-btn.active { background: #EDEDFC; color: #4C4DDC; border-color: #C7C8F5; }
+  .tour-tab-btn:not(.active) { color: #575757; border-color: #D6D6D6; background: white; }
+  .grayscale-hover { filter: grayscale(100%); opacity: 0.75; transition: all .2s ease; }
+  .grayscale-hover:hover { filter: grayscale(0%); opacity: 1; }
+
+  .tour-swiper .swiper-slide { display: flex; align-items: center; justify-content: center; }
+  .tour-pagination .swiper-bullet {
+    width: 22px; height: 22px; padding: 6px; box-sizing: border-box;
+    background-color: #C8C8F4; background-clip: content-box;
+    border-radius: 999px; border: none; cursor: pointer; transition: background-color .2s ease;
+    display: flex;
+  }
+  .tour-pagination .swiper-bullet.active { background-color: #4C4DDC; }
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  </style>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary: { DEFAULT: '#4C4DDC', dark: '#3B3CC0', darker: '#2A2A79', light: '#EDEDFC' },
+        },
+        fontFamily: {
+          sans: ['Albert Sans', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          body: ['Barlow', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        },
+      },
+    },
+  }
+</script>
+
+
+</head>
+
+<body class="">
+
+<!-- ============ HEADER (exact: h-85px, logo 32px @ x79, nav gap ~34px, buttons 75x36 / 128x37 @ right x1140/1231) ============ -->
+<header class=" w-full z-50 bg-white/95 backdrop-blur border-b border-gray-100">
+  <div class="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-[79px]">
+    <div class="flex items-center justify-between h-[85px]">
+      <a href="/" class="flex items-center gap-2 shrink-0">
+        <span class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
+          <svg class="icon" width="15" height="15" viewBox="87 34 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M95.0006 48.5006V50.0007M95.0006 34.9995V36.4996M98.7509 48.5006V50.0007M98.7509 34.9995V36.4996M87.5 42.5001H89.0001M87.5 46.2504H89.0001M87.5 38.7498H89.0001M101.001 42.5001H102.501M101.001 46.2504H102.501M101.001 38.7498H102.501M91.2503 48.5006V50.0007M91.2503 34.9995V36.4996M90.5002 36.4996H99.501C100.329 36.4996 101.001 37.1713 101.001 37.9998V47.0005C101.001 47.829 100.329 48.5006 99.501 48.5006H90.5002C89.6717 48.5006 89.0001 47.829 89.0001 47.0005V37.9998C89.0001 37.1713 89.6717 36.4996 90.5002 36.4996ZM92.7504 39.4999H97.2508C97.665 39.4999 98.0008 39.8357 98.0008 40.2499V44.7503C98.0008 45.1645 97.665 45.5004 97.2508 45.5004H92.7504C92.3362 45.5004 92.0004 45.1645 92.0004 44.7503V40.2499C92.0004 39.8357 92.3362 39.4999 92.7504 39.4999Z" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="font-display text-[19px] font-bold text-[#0B132A]">Hydro<span class="text-primary">ERP</span></span>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-9 text-[14px] font-medium text-[#444444]">
+        <a href="#features" class="hover:text-primary transition">Features</a>
+        <a href="#tour" class="hover:text-primary transition">Product Tour</a>
+        <a href="#modules" class="hover:text-primary transition">Modules</a>
+        <!-- <a href="#solutions" class="hover:text-primary transition">Solutions</a> -->
+        <!-- <a href="#pricing" class="hover:text-primary transition">Pricing</a> -->
+        <div class="relative group">
+          <button class="flex items-center gap-1.5 hover:text-primary transition">
+            Resources
+            <svg class="icon" width="7" height="4" viewBox="879 40 8 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M879 40.75L882.5 44.25L886 40.75" stroke="#444444" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+          <div class="absolute left-1/2 -translate-x-1/2 top-full pt-3 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition">
+            <div class="bg-white rounded-xl shadow-lg border border-gray-100 py-2">
+              <a href="#" class="block px-4 py-2 text-sm hover:bg-primary-light hover:text-primary">Blog</a>
+              <a href="#" class="block px-4 py-2 text-sm hover:bg-primary-light hover:text-primary">Help Center</a>
+              <a href="#" class="block px-4 py-2 text-sm hover:bg-primary-light hover:text-primary">Documentation</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="hidden lg:flex items-center gap-4">
+        <a href="#" class="flex items-center justify-center w-[75px] h-[36px] rounded-lg border border-[#D6D6D6] text-sm font-semibold text-[#0B132A] hover:bg-gray-50 transition">Sign In</a>
+        <a href="demo.html" class="flex items-center justify-center w-[128px] h-[37px] rounded-lg bg-primary text-white text-sm font-semibold hover:bg-primary-dark transition">Book a Demo</a>
+      </div>
+
+      <button id="menuBtn" class="lg:hidden w-10 h-10 flex items-center justify-center rounded-lg border border-gray-200 text-gray-700">
+        <i class="icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="#444" stroke-width="2" stroke-linecap="round"/></svg>
+        </i>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobileMenu" class="hidden lg:hidden border-t border-gray-100 bg-white px-5 pb-6 pt-2">
+    <nav class="flex flex-col gap-1 text-[15px] font-medium text-gray-700">
+      <a href="#features" class="py-2.5 border-b border-gray-50">Features</a>
+      <a href="#modules" class="py-2.5 border-b border-gray-50">Modules</a>
+      <a href="#solutions" class="py-2.5 border-b border-gray-50">Solutions</a>
+      <!-- <a href="#pricing" class="py-2.5 border-b border-gray-50">Pricing</a> -->
+      <a href="#" class="py-2.5 border-b border-gray-50">Resources</a>
+    </nav>
+    <div class="flex flex-col gap-3 mt-4">
+      <a href="#" class="w-full text-center px-5 py-2.5 rounded-lg border border-gray-300 text-sm font-semibold text-gray-800">Sign In</a>
+      <a href="#" class="w-full text-center px-5 py-2.5 rounded-lg bg-primary text-white text-sm font-semibold">Book a Demo</a>
+    </div>
+  </div>
+</header>
+
+<div class="mt-12 flex justify-center items-center">
+      <div class="form-container">
+
+    <div class="form-header">
+      <h1>Send a Message</h1>
+      <p>Fill in the details below and we'll get back to you.</p>
+    </div>
+
+    <form>
+      
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        >
+      </div>
+
+      <div class="form-group">
+        <label for="mobile">Email</label>
+        <input
+          type="email"
+          id="mobile"
+          name="mobile"
+          placeholder="Enter your email"
+          required
+        >
+      </div>
+
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea
+          id="description"
+          name="description"
+          placeholder="Write your message..."
+          required
+        ></textarea>
+      </div>
+
+      <button type="submit" class="send-btn">
+        Send
+      </button>
+
+    </form>
+
+  </div>
+</div>
+<script>
+  document.getElementById('menuBtn').addEventListener('click', function () {
+    document.getElementById('mobileMenu').classList.toggle('hidden');
+  });
+
+  document.querySelectorAll('#pricing details').forEach(function (el) {
+    el.addEventListener('toggle', function () {
+      if (el.open) {
+        document.querySelectorAll('#pricing details').forEach(function (other) {
+          if (other !== el) other.removeAttribute('open');
+        });
+      }
+    });
+  });
+
+  // ===== Product Tour: Web View / Mobile View slider (Swiper) =====
+  (function () {
+    const panels = document.querySelectorAll('.tour-panel');
+    const tabBtns = document.querySelectorAll('.tour-tab-btn');
+    const swiperInstances = {};
+
+    panels.forEach(function (panel) {
+      const key = panel.dataset.tourPanel;
+      const caption = {
+        title: panel.querySelector('.tour-caption-title'),
+        desc: panel.querySelector('.tour-caption-desc'),
+      };
+
+      function updateCaption(swiper) {
+        const slide = swiper.slides[swiper.activeIndex];
+        if (!slide) return;
+        if (caption.title) caption.title.textContent = slide.dataset.title || '';
+        if (caption.desc) caption.desc.textContent = slide.dataset.desc || '';
+      }
+
+      const swiper = new Swiper(panel.querySelector('.tour-swiper'), {
+        loop: false,
+        speed: 450,
+        pagination: {
+          el: panel.querySelector('.tour-pagination'),
+          clickable: false,
+          bulletClass: 'swiper-bullet',
+          bulletActiveClass: 'active',
+          renderBullet: function (index, className) {
+            return '<button class="' + className + '" aria-label="Go to slide ' + (index + 1) + '"></button>';
+          },
+        },
+        on: {
+          slideChange: updateCaption,
+          init: updateCaption,
+        },
+      });
+
+      // Wire prev/next arrows directly to the Swiper API (more reliable than Swiper's built-in
+      // navigation option, which can fail to bind when nextEl/prevEl are passed as live elements).
+      const prevBtn = panel.querySelector('.tour-prev');
+      const nextBtn = panel.querySelector('.tour-next');
+      if (prevBtn) prevBtn.addEventListener('click', function () { swiper.slidePrev(); });
+      if (nextBtn) nextBtn.addEventListener('click', function () { swiper.slideNext(); });
+
+      // Wire pagination dots directly too, via event delegation (robust even as Swiper
+      // re-renders the bullet elements on every update).
+      const paginationEl = panel.querySelector('.tour-pagination');
+      if (paginationEl) {
+        paginationEl.addEventListener('click', function (e) {
+          const bullet = e.target.closest('.swiper-bullet');
+          if (!bullet) return;
+          const index = Array.from(paginationEl.children).indexOf(bullet);
+          if (index === -1) return;
+          swiper.slideTo(index);
+        });
+      }
+
+      swiperInstances[key] = swiper;
+    });
+
+    tabBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        const target = btn.dataset.tourTab;
+        tabBtns.forEach(function (b) { b.classList.toggle('active', b === btn); });
+        panels.forEach(function (panel) {
+          const isTarget = panel.dataset.tourPanel === target;
+          panel.classList.toggle('hidden', !isTarget);
+        });
+        // Swiper needs a resize/update after being un-hidden so slide widths are measured correctly
+        if (swiperInstances[target]) {
+          swiperInstances[target].update();
+          swiperInstances[target].slideTo(0, 0);
+        }
+      });
+    });
+  })();
+</script>
+</body>
+</html>

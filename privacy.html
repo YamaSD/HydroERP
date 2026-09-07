@@ -936,6 +936,98 @@
     </div>
 
   </footer>
+<script>
+  document.getElementById('menuBtn').addEventListener('click', function () {
+    document.getElementById('mobileMenu').classList.toggle('hidden');
+  });
 
+  document.querySelectorAll('#pricing details').forEach(function (el) {
+    el.addEventListener('toggle', function () {
+      if (el.open) {
+        document.querySelectorAll('#pricing details').forEach(function (other) {
+          if (other !== el) other.removeAttribute('open');
+        });
+      }
+    });
+  });
+
+  // ===== Product Tour: Web View / Mobile View slider (Swiper) =====
+  (function () {
+    const panels = document.querySelectorAll('.tour-panel');
+    const tabBtns = document.querySelectorAll('.tour-tab-btn');
+    const swiperInstances = {};
+
+    panels.forEach(function (panel) {
+      const key = panel.dataset.tourPanel;
+      const caption = {
+        title: panel.querySelector('.tour-caption-title'),
+        desc: panel.querySelector('.tour-caption-desc'),
+      };
+
+      function updateCaption(swiper) {
+        const slide = swiper.slides[swiper.activeIndex];
+        if (!slide) return;
+        if (caption.title) caption.title.textContent = slide.dataset.title || '';
+        if (caption.desc) caption.desc.textContent = slide.dataset.desc || '';
+      }
+
+      const swiper = new Swiper(panel.querySelector('.tour-swiper'), {
+        loop: false,
+        speed: 450,
+        pagination: {
+          el: panel.querySelector('.tour-pagination'),
+          clickable: false,
+          bulletClass: 'swiper-bullet',
+          bulletActiveClass: 'active',
+          renderBullet: function (index, className) {
+            return '<button class="' + className + '" aria-label="Go to slide ' + (index + 1) + '"></button>';
+          },
+        },
+        on: {
+          slideChange: updateCaption,
+          init: updateCaption,
+        },
+      });
+
+      // Wire prev/next arrows directly to the Swiper API (more reliable than Swiper's built-in
+      // navigation option, which can fail to bind when nextEl/prevEl are passed as live elements).
+      const prevBtn = panel.querySelector('.tour-prev');
+      const nextBtn = panel.querySelector('.tour-next');
+      if (prevBtn) prevBtn.addEventListener('click', function () { swiper.slidePrev(); });
+      if (nextBtn) nextBtn.addEventListener('click', function () { swiper.slideNext(); });
+
+      // Wire pagination dots directly too, via event delegation (robust even as Swiper
+      // re-renders the bullet elements on every update).
+      const paginationEl = panel.querySelector('.tour-pagination');
+      if (paginationEl) {
+        paginationEl.addEventListener('click', function (e) {
+          const bullet = e.target.closest('.swiper-bullet');
+          if (!bullet) return;
+          const index = Array.from(paginationEl.children).indexOf(bullet);
+          if (index === -1) return;
+          swiper.slideTo(index);
+        });
+      }
+
+      swiperInstances[key] = swiper;
+    });
+
+    tabBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        const target = btn.dataset.tourTab;
+        tabBtns.forEach(function (b) { b.classList.toggle('active', b === btn); });
+        panels.forEach(function (panel) {
+          const isTarget = panel.dataset.tourPanel === target;
+          panel.classList.toggle('hidden', !isTarget);
+        });
+        // Swiper needs a resize/update after being un-hidden so slide widths are measured correctly
+        if (swiperInstances[target]) {
+          swiperInstances[target].update();
+          swiperInstances[target].slideTo(0, 0);
+        }
+      });
+    });
+  })();
+</script>
 </body>
 </html>
